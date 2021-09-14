@@ -27,7 +27,6 @@ public class ControllerColor : MonoBehaviour {
 
     private void Start()
     {
-
         if (controllerType == ControllerType.HTCVIVE)
         {
             bodyIndex = 1;
@@ -60,57 +59,38 @@ public class ControllerColor : MonoBehaviour {
 
         if (transform.childCount > 0)
         {
-            if (transform.parent.name == "Controller (right)")
+            if (bodyIndex >= 0)
+                transform.GetChild(bodyIndex).GetComponent<MeshRenderer>().material = white;
+
+            if (gripIndex > 0)
+                transform.GetChild(gripIndex).GetComponent<MeshRenderer>().material = white;
+
+            if (grip2Index > 0)
+                transform.GetChild(grip2Index).GetComponent<MeshRenderer>().material = white;
+
+            if (menuIndex > 0)
+                transform.GetChild(menuIndex).GetComponent<MeshRenderer>().material = white;
+
+            if (thumbstickIndex > 0)
+                transform.GetChild(thumbstickIndex).GetComponent<MeshRenderer>().material = white;
+
+            if (systemIndex > 0)
+                transform.GetChild(systemIndex).GetComponent<MeshRenderer>().material = white;
+
+            if (trackpadIndex > 0)
+                transform.GetChild(trackpadIndex).GetComponent<MeshRenderer>().material = white;
+
+            if (triggerIndex > 0)
+                transform.GetChild(triggerIndex).GetComponent<MeshRenderer>().material = white;
+
+            if (transform.parent.name == "Controller (right)") // highlight two buttons
             {
-                if (bodyIndex >= 0)
-                    transform.GetChild(bodyIndex).GetComponent<MeshRenderer>().material = white;
-
-                if (gripIndex > 0)
-                    transform.GetChild(gripIndex).GetComponent<MeshRenderer>().material = white;
-
-                if (grip2Index > 0)
-                    transform.GetChild(grip2Index).GetComponent<MeshRenderer>().material = white;
-
-                if (menuIndex > 0)
-                    transform.GetChild(menuIndex).GetComponent<MeshRenderer>().material = white;
-
-                if (thumbstickIndex > 0)
-                    transform.GetChild(thumbstickIndex).GetComponent<MeshRenderer>().material = white;
-
                 if (trackpadIndex > 0)
                     transform.GetChild(trackpadIndex).GetComponent<MeshRenderer>().material = green;
 
                 if (triggerIndex > 0)
                     transform.GetChild(triggerIndex).GetComponent<MeshRenderer>().material = red;
-
-                if (systemIndex > 0)
-                    transform.GetChild(systemIndex).GetComponent<MeshRenderer>().material = white;
             }
-            else {
-                if (bodyIndex > 0)
-                    transform.GetChild(bodyIndex).GetComponent<MeshRenderer>().material = white;
-
-                if (gripIndex > 0)
-                    transform.GetChild(gripIndex).GetComponent<MeshRenderer>().material = white;
-
-                if (grip2Index > 0)
-                    transform.GetChild(grip2Index).GetComponent<MeshRenderer>().material = white;
-
-                if (menuIndex > 0)
-                    transform.GetChild(menuIndex).GetComponent<MeshRenderer>().material = white;
-
-                if (thumbstickIndex > 0)
-                    transform.GetChild(thumbstickIndex).GetComponent<MeshRenderer>().material = white;
-
-                if (trackpadIndex > 0)
-                    transform.GetChild(trackpadIndex).GetComponent<MeshRenderer>().material = white;
-
-                if (triggerIndex > 0)
-                    transform.GetChild(triggerIndex).GetComponent<MeshRenderer>().material = white;
-
-                if (systemIndex > 0)
-                    transform.GetChild(systemIndex).GetComponent<MeshRenderer>().material = white;
-            }   
         }
 	}
 }

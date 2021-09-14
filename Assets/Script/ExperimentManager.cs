@@ -35,24 +35,15 @@ public class ExperimentManager : MonoBehaviour
     public GameObject LimitedVisionGO;
     public Transform FlatLandmarks;
     public Transform CircularLandmarks;
-    //public Text DashBoardText;
-    //public Text SeenCardText;
-    //public Text SelectCardText;
-    //public Text MemoryTypeText;
-    //public Text TimerText;
     public Text Instruction;
     public Text InstructionTimer;
     public Transform FootPrint;
     public TextMeshProUGUI LeftControllerText;
     public TextMeshProUGUI RightControllerText;
-    //public Transform FilterCube;
-    //public Transform EdgeIndicator;
-    //public Transform Hoop;
-    //public Transform Stand;
-    //public Transform Ball;
     public Transform CardGame;
     public AudioClip TimesUp;
     public AudioClip wrongAnswer;
+    public DataLoggingManager dataLogger;
 
     [Header("Task File")]
     public TextAsset Patterns2;
@@ -230,10 +221,12 @@ public class ExperimentManager : MonoBehaviour
         LocalMemoryTime = memoryTime;
         localDistractorTime = distractorTime;
         localTimer = 4;
+
+        // Auto log data using new data logger
+        //dataLogger.StartLogging();
+
         // setup experiment
         PrepareExperiment();
-
-       
     }
 
     // Update is called once per frame
