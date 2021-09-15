@@ -204,20 +204,27 @@ public class ExperimentManager : MonoBehaviour
         if (StartSceneScript.PublicTrialNumber != 0)
             trialNo = StartSceneScript.PublicTrialNumber;
 
+        string condition = "";
+
+        if (BlindFold)
+            condition = "Blindfold";
+        else if (Landmark)
+            condition = "Landmark";
+
         // setup writer stream
-        string writerFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + StartSceneScript.ParticipantID + "/Participant_" + StartSceneScript.ParticipantID + "_RawData.csv";
+        string writerFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + StartSceneScript.ParticipantID + "/Participant_" + StartSceneScript.ParticipantID + "_RawData.csv";
         writer = new StreamWriter(writerFilePath, true);
 
-        string writerHeadFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + StartSceneScript.ParticipantID + "/Participant_" + StartSceneScript.ParticipantID + "_HeadAndHand.csv";
+        string writerHeadFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + StartSceneScript.ParticipantID + "/Participant_" + StartSceneScript.ParticipantID + "_HeadAndHand.csv";
         writerHead = new StreamWriter(writerHeadFilePath, true);
 
-        string writerAnswerFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + StartSceneScript.ParticipantID + "/Participant_" + StartSceneScript.ParticipantID + "_Answers.csv";
+        string writerAnswerFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + StartSceneScript.ParticipantID + "/Participant_" + StartSceneScript.ParticipantID + "_Answers.csv";
         writerAnswer = new StreamWriter(writerAnswerFilePath, true);
 
-        string writerInteractionFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + StartSceneScript.ParticipantID + "/Participant_" + StartSceneScript.ParticipantID + "_Interaction.csv";
+        string writerInteractionFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + StartSceneScript.ParticipantID + "/Participant_" + StartSceneScript.ParticipantID + "_Interaction.csv";
         writerInteraction = new StreamWriter(writerInteractionFilePath, true);
 
-        string writerTrialCardsFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + StartSceneScript.ParticipantID + "/trialCards.csv";
+        string writerTrialCardsFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + StartSceneScript.ParticipantID + "/trialCards.csv";
         writerTrialCards = new StreamWriter(writerTrialCardsFilePath, true);
 
         string writerAnswerCardsFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + StartSceneScript.ParticipantID + "/answerCards.csv";

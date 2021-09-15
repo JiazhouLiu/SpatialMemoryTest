@@ -73,6 +73,13 @@ public class StartSceneScript : MonoBehaviour
         Landmark = landmark;
         Blindfold = blindfold;
 
+        string condition = "";
+
+        if (blindfold)
+            condition = "Blindfold";
+        else if (landmark)
+            condition = "Landmark";
+
         PublicTrialNumber = TrialNumber;
 
         if (ExperimentID > 0)
@@ -109,7 +116,7 @@ public class StartSceneScript : MonoBehaviour
             CurrentDateTime = GetDateTimeString();
 
             // Raw data log
-            string writerFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + ParticipantID + "/Participant_" + ParticipantID + "_RawData.csv";
+            string writerFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + ParticipantID + "/Participant_" + ParticipantID + "_RawData.csv";
             StreamWriter writer = new StreamWriter(writerFilePath, false);
             string logFileHeader = "TimeSinceStart,UserHeight,TrialNo,TrialID,ParticipantID,ExperimentSequence,Layout,Difficulty,TrialState,CameraPosition.x," +
                 "CameraPosition.y,CameraPosition.z,CameraEulerAngles.x,CameraEulerAngles.y,CameraEulerAngles.z,MainControllerPosition.x,MainControllerPosition.y," +
@@ -118,7 +125,7 @@ public class StartSceneScript : MonoBehaviour
             writer.Close();
 
             // head and hand data log
-            string writerHeadFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + ParticipantID + "/Participant_" + ParticipantID + "_HeadAndHand.csv";
+            string writerHeadFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + ParticipantID + "/Participant_" + ParticipantID + "_HeadAndHand.csv";
             writer = new StreamWriter(writerHeadFilePath, false);
             writer.WriteLine("TimeSinceStart,TrialNo,TrialID,ParticipantID,ExperimentSequence,Layout,Difficulty,TrialState,CameraPosition.x," +
                 "CameraPosition.y,CameraPosition.z,CameraEulerAngles.x,CameraEulerAngles.y,CameraEulerAngles.z,MainControllerPosition.x,MainControllerPosition.y," +
@@ -126,13 +133,13 @@ public class StartSceneScript : MonoBehaviour
             writer.Close();
 
             // interaction log
-            string writerInteractionFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + ParticipantID + "/Participant_" + ParticipantID + "_Interaction.csv";
+            string writerInteractionFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + ParticipantID + "/Participant_" + ParticipantID + "_Interaction.csv";
             writer = new StreamWriter(writerInteractionFilePath, false);
             writer.WriteLine("TimeSinceStart,TrialNo,TrialID,ParticipantID,Layout,Info,CardSeen,CardSelected,CardAnswered,CardPlayed");
             writer.Close();
 
             // Answers data log
-            string writerAnswerFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + ParticipantID + "/Participant_" + ParticipantID + "_Answers.csv";
+            string writerAnswerFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + ParticipantID + "/Participant_" + ParticipantID + "_Answers.csv";
             writer = new StreamWriter(writerAnswerFilePath, false);
             writer.WriteLine("ParticipantID,TrialNo,TrialID,Layout,Difficulty,AnswerAccuracy,Card1SeenTime,Card2SeenTime,Card3SeenTime,Card4SeenTime,Card5SeenTime," +
                 "Card1SelectTime,Card2SelectTime,Card3SelectTime,Card4SelectTime,Card5SelectTime");
@@ -142,7 +149,7 @@ public class StartSceneScript : MonoBehaviour
         {
             string lastFileName = "";
 
-            string folderPath = "Assets/ExperimentData/ExperimentLog/Participant " + ParticipantID + "/";
+            string folderPath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + ParticipantID + "/";
             DirectoryInfo info = new DirectoryInfo(folderPath);
             FileInfo[] fileInfo = info.GetFiles();
             foreach (FileInfo file in fileInfo)
@@ -158,7 +165,7 @@ public class StartSceneScript : MonoBehaviour
             }
             else
             {
-                string writerFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + ParticipantID + "/" + lastFileName;
+                string writerFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + ParticipantID + "/" + lastFileName;
                 string lastLine = File.ReadAllLines(writerFilePath)[File.ReadAllLines(writerFilePath).Length - 1];
                 float lastTime = float.Parse(lastLine.Split(',')[0]);
                 float height = float.Parse(lastLine.Split(',')[1]);
