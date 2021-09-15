@@ -19,10 +19,11 @@ public class StartSceneScript : MonoBehaviour
     public static int PublicTrialNumber;
     public static float lastTimePast;
     public static int distratorType = 1;
+    public static bool Blindfold;
+    public static bool Landmark;
 
     [Header("Do Not Change")]
     public int trainingCount = 0; // 0: start 8: GO TO Experiment
-
     public Text instruction;
     public Text instruction2;
     public Transform FootPrint;
@@ -33,11 +34,13 @@ public class StartSceneScript : MonoBehaviour
     //public Transform Ball;
     public Transform CardGame;
     public Transform Cards;
-    public Transform FilterCube;
+    //public Transform FilterCube;
 
     [Header("Experiment Parameter")]
     public int ExperimentID;
     public int TrialNumber;
+    public bool blindfold;
+    public bool landmark;
 
     private VRTK_ControllerEvents rightCE;
 
@@ -67,6 +70,9 @@ public class StartSceneScript : MonoBehaviour
             Cards.GetChild(3).gameObject
         };
 
+        Landmark = landmark;
+        Blindfold = blindfold;
+
         PublicTrialNumber = TrialNumber;
 
         if (ExperimentID > 0)
@@ -84,27 +90,6 @@ public class StartSceneScript : MonoBehaviour
                 default:
                     break;
             }
-
-            // old conditions
-            //switch (ExperimentID % 4)
-            //{
-            //    case 1:
-            //        ExperimentSequence = 1;
-            //        break;
-            //    case 2:
-            //        ExperimentSequence = 2;
-            //        break;
-            //    case 3:
-            //        ExperimentSequence = 3;
-            //        break;
-            //    case 0:
-            //        ExperimentSequence = 4;
-            //        break;
-            //    default:
-            //        break;
-            //}
-
-
         }
         else
         { // testing stream

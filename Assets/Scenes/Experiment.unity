@@ -1152,6 +1152,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 661852686}
+  - component: {fileID: 661852688}
   - component: {fileID: 661852687}
   m_Layer: 0
   m_Name: ExperimentManager
@@ -1200,6 +1201,7 @@ MonoBehaviour:
   CardGame: {fileID: 1130929884}
   TimesUp: {fileID: 8300000, guid: af03294447612544e96e620ea620323e, type: 3}
   wrongAnswer: {fileID: 8300000, guid: 779d0b2f7f29e9943a1595243dcf142c, type: 3}
+  dataLogger: {fileID: 661852688}
   Patterns2: {fileID: 4900000, guid: ae063c2a19a69384d932348d925571d3, type: 3}
   Patterns3: {fileID: 4900000, guid: cffbf70892a73a744bcb52137a659b93, type: 3}
   Patterns5: {fileID: 4900000, guid: 5509d279b463db64b89f8e512ad258f1, type: 3}
@@ -1222,6 +1224,26 @@ MonoBehaviour:
   gameState: 0
   shootTotalNumber: 0
   seenTimeLog: []
+--- !u!114 &661852688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661852685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6d29f2b3bce5440888b83e5e9416a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FilePath: D:\SpatialMemoryData
+  TimeBetweenLogs: 0.05
+  HeadTransform: {fileID: 490194020}
+  LeftControllerTransform: {fileID: 2138637222}
+  RightControllerTransform: {fileID: 953874980}
+  EM: {fileID: 661852687}
+  IsLogging: 0
+  ParticipantID: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

@@ -180,6 +180,11 @@ public class ExperimentManager : MonoBehaviour
         foreach (Transform t in CardGame) {
             gameCards.Add(t.gameObject);
         }
+
+        if (GameObject.Find("MainExperimentManager") != null) {
+            BlindFold = StartSceneScript.Blindfold;
+            Landmark = StartSceneScript.Landmark;
+        }
         
 
         // setup main hand

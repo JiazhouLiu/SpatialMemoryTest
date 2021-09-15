@@ -14,10 +14,6 @@ public class DataLoggingManager : MonoBehaviour
     public Transform HeadTransform;
     public Transform LeftControllerTransform;
     public Transform RightControllerTransform;
-    public Transform WaistTransform;
-    public Transform LeftFootTransform;
-    public Transform RightFootTransform;
-    public Transform CameraTransform;
 
     [Header("Reference")]
     public ExperimentManager EM;
