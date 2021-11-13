@@ -227,7 +227,7 @@ public class ExperimentManager : MonoBehaviour
         string writerTrialCardsFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + StartSceneScript.ParticipantID + "/trialCards.csv";
         writerTrialCards = new StreamWriter(writerTrialCardsFilePath, true);
 
-        string writerAnswerCardsFilePath = "Assets/ExperimentData/ExperimentLog/Participant " + StartSceneScript.ParticipantID + "/answerCards.csv";
+        string writerAnswerCardsFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + StartSceneScript.ParticipantID + "/answerCards.csv";
         writerAnswerCards = new StreamWriter(writerAnswerCardsFilePath, true);
 
         LocalMemoryTime = memoryTime;
