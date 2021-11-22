@@ -41,10 +41,10 @@ public class Card : MonoBehaviour
         Color touchedColor = new Color(117f / 255f, 112f / 255f, 179f / 255f);
         if (em == null)
         {
-            if (GameObject.Find("FromStartScene") != null && 
-               (GameObject.Find("FromStartScene").GetComponent<StartSceneScript>().trainingCount == 2 ||
-                GameObject.Find("FromStartScene").GetComponent<StartSceneScript>().trainingCount == 9 ||
-                GameObject.Find("FromStartScene").GetComponent<StartSceneScript>().trainingCount == 4))
+            if (GameObject.Find("MainExperimentManager") != null && 
+               (GameObject.Find("MainExperimentManager").GetComponent<StartSceneScript>().trainingCount == 2 ||
+                GameObject.Find("MainExperimentManager").GetComponent<StartSceneScript>().trainingCount == 9 ||
+                GameObject.Find("MainExperimentManager").GetComponent<StartSceneScript>().trainingCount == 4))
             {
                 if (filled && seen && !selected)
                 {

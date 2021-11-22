@@ -88,7 +88,7 @@ namespace VRTK
 
         public void OnAfterDeserialize()
         {
-            SetBuildTarget(buildTargetGroupName);
+            //SetBuildTarget(buildTargetGroupName);
         }
 
         private void SetBuildTarget(string groupName)

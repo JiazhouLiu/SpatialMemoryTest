@@ -664,6 +664,8 @@ namespace VRTK
             if (TriggerPressed != null)
             {
                 TriggerPressed(this, e);
+
+               // GameObject.Find("MagicCarpetManager").GetComponent<MagicCarpetManager>()
             }
         }
 

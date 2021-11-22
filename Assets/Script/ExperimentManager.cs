@@ -235,7 +235,7 @@ public class ExperimentManager : MonoBehaviour
         localTimer = 4;
 
         // Auto log data using new data logger
-        //dataLogger.StartLogging();
+        dataLogger.StartLogging();
 
         // setup experiment
         PrepareExperiment();
@@ -250,11 +250,17 @@ public class ExperimentManager : MonoBehaviour
             if(BlindFold)
                 LimitedVisionGO.SetActive(true);
             if (Landmark) {
-                if (gameState == GameState.ShowPattern || gameState == GameState.SelectCards) {
+                if (gameState == GameState.ShowPattern || gameState == GameState.SelectCards)
+                {
                     CircularLandmarks.position = new Vector3(0, adjustedHeight, 0);
                     CircularLandmarks.gameObject.SetActive(true);
                     FlatLandmarks.gameObject.SetActive(false);
-                }  
+                }
+                else {
+                    CircularLandmarks.gameObject.SetActive(false);
+                    FlatLandmarks.gameObject.SetActive(false);
+                }
+
             }
         }
         else {
@@ -266,6 +272,11 @@ public class ExperimentManager : MonoBehaviour
                     FlatLandmarks.position = new Vector3(0, adjustedHeight, 1);
                     FlatLandmarks.gameObject.SetActive(true);
                     CircularLandmarks.gameObject.SetActive(false);
+                }
+                else
+                {
+                    CircularLandmarks.gameObject.SetActive(false);
+                    FlatLandmarks.gameObject.SetActive(false);
                 }
             }
             transform.localEulerAngles = new Vector3(0, 0, 0);
@@ -330,8 +341,8 @@ public class ExperimentManager : MonoBehaviour
                     {
                         case GameState.Prepare:
                             // check position
-                            if (Camera.main.transform.position.x < 0.4f && Camera.main.transform.position.x > -0.4f && Camera.main.transform.position.z < 0.4f &&
-                               Camera.main.transform.position.z > -0.4f) {
+                            if (Camera.main.transform.position.x < 0.5f && Camera.main.transform.position.x > -0.5f && Camera.main.transform.position.z < 0.5f &&
+                               Camera.main.transform.position.z > -0.5f) {
                                 FootPrint.gameObject.SetActive(false);
                                 ShowPattern();
                             }   
@@ -555,7 +566,7 @@ public class ExperimentManager : MonoBehaviour
                 {
                     if (IsCardFilled(card))
                         SetCardsColor(card.transform, Color.black);
-                    StartCoroutine(Rotate(card.transform, new Vector3(0, 180, 0), 0.5f));
+                    //StartCoroutine(Rotate(card.transform, new Vector3(0, 180, 0), 0.5f));
                 }
                 WriteInteractionToLog("SelectedCards");
                 // move to next state

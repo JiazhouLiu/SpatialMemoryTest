@@ -32,7 +32,7 @@ public class DataLoggingManager : MonoBehaviour
     private float timer = 0f;
     private const string format = "F4";
 
-    private void Start()
+    private void Awake()
     {
         if (!FilePath.EndsWith("/"))
             FilePath += "/";
@@ -44,22 +44,22 @@ public class DataLoggingManager : MonoBehaviour
     {
         // Head transform
         string path = string.Format("{0}P{1}_HeadTransform.txt", FilePath, ParticipantID);
-        headTransformStreamWriter = new StreamWriter(path, true);
+        headTransformStreamWriter = new StreamWriter(path, false);
         headTransformStreamWriter.WriteLine("Timestamp\tPosition.x\tPosition.y\tPosition.z\tRotation.x\tRotation.y\tRotation.z\tRotation.w");
 
         // Left Controller transform
         path = string.Format("{0}P{1}_LeftControllerTransform.txt", FilePath, ParticipantID);
-        leftControllerTransformStreamWriter = new StreamWriter(path, true);
+        leftControllerTransformStreamWriter = new StreamWriter(path, false);
         leftControllerTransformStreamWriter.WriteLine("Timestamp\tPosition.x\tPosition.y\tPosition.z\tRotation.x\tRotation.y\tRotation.z\tRotation.w");
 
         // Right Controller transform
         path = string.Format("{0}P{1}_RightControllerTransform.txt", FilePath, ParticipantID);
-        rightControllerTransformStreamWriter = new StreamWriter(path, true);
+        rightControllerTransformStreamWriter = new StreamWriter(path, false);
         rightControllerTransformStreamWriter.WriteLine("Timestamp\tPosition.x\tPosition.y\tPosition.z\tRotation.x\tRotation.y\tRotation.z\tRotation.w");
 
         // Detailed View transforms and properties
         path = string.Format("{0}P{1}_Cards.txt", FilePath, ParticipantID);
-        cardsTransformStreamWriter = new StreamWriter(path, true);
+        cardsTransformStreamWriter = new StreamWriter(path, false);
         cardsTransformStreamWriter.WriteLine("Timestamp\tPosition.x\tPosition.y\tPosition.z\tRotation.x\tRotation.y\tRotation.z\tRotation.w");
 
         IsLogging = true;

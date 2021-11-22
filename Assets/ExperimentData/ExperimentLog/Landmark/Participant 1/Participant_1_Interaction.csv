@@ -1,0 +1,35 @@
+TimeSinceStart,TrialNo,TrialID,ParticipantID,Layout,Info,CardSeen,CardSelected,CardAnswered,CardPlayed
+27.39778,1,Training,1,Flat,Prepare,,,
+28.40889,1,Training,1,Flat,ShowPattern,,,
+28.56445,1,Training,1,Flat,Card,30,,,
+30.33111,1,Training,1,Flat,Card,2,,,
+30.37556,1,Training,1,Flat,Card,25,,,
+34.26445,1,Training,1,Flat,Card,,25,,
+35.20889,1,Training,1,Flat,Card,,2,,
+38.59778,1,Training,1,Flat,Card,20,,,
+38.70889,1,Training,1,Flat,Card,11,,,
+44.08667,1,Training,1,Flat,Card,,30,,
+45.75333,1,Training,1,Flat,Card,,20,,
+48.33111,1,Training,1,Flat,Card,,11,,
+48.33111,1,Training,1,Flat,Distractor,,,
+52.23111,1,Training,1,Flat,Task: 1,,,
+52.24222,1,Training,1,Flat,CardGame,,,,6
+52.24222,1,Training,1,Flat,Task: 1,,,
+56.25333,1,Training,1,Flat,Task: 3,,,
+59.07556,1,Training,1,Flat,CardGame,,,,3
+59.07556,1,Training,1,Flat,Task: 8,,,
+62.66445,1,Training,1,Flat,CardGame,,,,8
+62.66445,1,Training,1,Flat,Task: 7,,,
+65.10889,1,Training,1,Flat,CardGame,,,,7
+65.10889,1,Training,1,Flat,Task: 8,,,
+68.20889,1,Training,1,Flat,CardGame,,,,8
+68.20889,1,Training,1,Flat,Task: 8,,,
+70.99778,1,Training,1,Flat,CardGame,,,,8
+70.99778,1,Training,1,Flat,Task: 5,,,
+72.39778,1,Training,1,Flat,CardGame,,,,5
+72.39778,1,Training,1,Flat,Task: 1,,,
+74.28667,1,Training,1,Flat,CardGame,,,,1
+74.28667,1,Training,1,Flat,Task: 3,,,
+75.17556,1,Training,1,Flat,SelectedCards,,,
+79.37556,1,Training,1,Flat,Card,,,1,
+79.50889,1,Training,1,Flat,Card,,,13,

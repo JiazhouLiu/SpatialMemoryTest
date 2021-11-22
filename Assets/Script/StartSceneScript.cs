@@ -102,7 +102,6 @@ public class StartSceneScript : MonoBehaviour
         { // testing stream
             ExperimentSequence = 1;
         }
-        Debug.Log("1");
         for (int i = 0; i < CardGame.childCount; i++)
         {
             Vector3 temp = CardGame.GetChild(i).localPosition;
@@ -110,7 +109,6 @@ public class StartSceneScript : MonoBehaviour
             CardGame.GetChild(i).localPosition = CardGame.GetChild(randomIndex).localPosition;
             CardGame.GetChild(randomIndex).localPosition = temp;
         }
-        Debug.Log("2");
         if (TrialNumber == 0)
         {
             CurrentDateTime = GetDateTimeString();
@@ -123,7 +121,7 @@ public class StartSceneScript : MonoBehaviour
                 "MainControllerPosition.z,MainControllerEulerAngles.x,MainControllerEulerAngles.y,MainControllerEulerAngles.z,MainPadPressed,MainTriggerPressed";
             writer.WriteLine(logFileHeader);
             writer.Close();
-            Debug.Log("3");
+
             // head and hand data log
             string writerHeadFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + ParticipantID + "/Participant_" + ParticipantID + "_HeadAndHand.csv";
             writer = new StreamWriter(writerHeadFilePath, false);
@@ -178,7 +176,6 @@ public class StartSceneScript : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("111");
         if (Input.GetKeyDown("b"))
             trainingCount--;
 
@@ -270,7 +267,7 @@ public class StartSceneScript : MonoBehaviour
                             {
                                 if (IsCardFilled(card))
                                     SetCardsColor(card.transform, Color.black);
-                                card.transform.localEulerAngles = Vector3.zero;
+                                card.transform.localEulerAngles = new Vector3(0, 180, 0);
                             }
                             // enable the interactable feature
                             foreach (GameObject card in cardLists)
