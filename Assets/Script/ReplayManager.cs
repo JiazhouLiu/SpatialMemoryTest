@@ -34,7 +34,9 @@ public class ReplayManager : MonoBehaviour
     public int numberOfColumns;
 
     [Header("Variables")]
+    public string folder;
     public int participantNumber;
+    public float adjustedHeight;
     private Layout layout;
     private int difficultyLevel = 5;
 
@@ -45,7 +47,7 @@ public class ReplayManager : MonoBehaviour
     // do not change
     [HideInInspector]
     public int mainHand = 1; // 0: left; 1: right
-    private float adjustedHeight = 1;
+    
     private Transform mainController;
     private VRTK_InteractUse mainHandIU;
     private VRTK_InteractTouch mainHandIT;
@@ -103,7 +105,7 @@ public class ReplayManager : MonoBehaviour
         mainHand = 1;
 
         // setup adjusted height
-        adjustedHeight = 0.75f;
+        //adjustedHeight -= 0.5f;
 
         // setup experimentSequence
         if(participantNumber % 2 == 1)
@@ -113,7 +115,7 @@ public class ReplayManager : MonoBehaviour
 
         //ShowBoard();
 
-        string FilePath = "Assets/ExperimentData/ExperimentLog/Participant " + participantNumber + "/Participant_" + participantNumber + "_HeadAndHand.csv";
+        string FilePath = "Assets/ExperimentData/ExperimentLog/" + folder + "/Participant " + participantNumber + "/Participant_" + participantNumber + "_HeadAndHand.csv";
         lines = File.ReadAllText(FilePath).Split(lineSeperater);
         lines = lines.Skip(1).ToArray();
 
@@ -144,16 +146,16 @@ public class ReplayManager : MonoBehaviour
         //else
         //    transform.localEulerAngles = new Vector3(0, 0, 0);
 
-        if (Input.GetKeyDown("b")) {
-            foreach (GameObject go in gazePointList)
-                Destroy(go);
-            foreach (GameObject go in pathPointList)
-                Destroy(go);
-            gazePointList = new List<GameObject>();
-            pathPointList = new List<GameObject>();
-            trialNo++;
-            ShowBoard();
-        }
+        //if (Input.GetKeyDown("b")) {
+        //    foreach (GameObject go in gazePointList)
+        //        Destroy(go);
+        //    foreach (GameObject go in pathPointList)
+        //        Destroy(go);
+        //    gazePointList = new List<GameObject>();
+        //    pathPointList = new List<GameObject>();
+        //    trialNo++;
+        //    ShowBoard();
+        //}
         if (Input.GetKeyDown("r")) {
             foreach (GameObject go in gazePointList)
                 Destroy(go);
@@ -166,21 +168,22 @@ public class ReplayManager : MonoBehaviour
             cylinderCollider.SetActive(false);
 
             trialNo++;
-
+            
             if (GetCurrentCardsLayout() != Layout.NULL)
                 layout = GetCurrentCardsLayout();
-
-            if (layout == Layout.Flat)
-                cubeCollider.SetActive(true);
-            else
-                cylinderCollider.SetActive(true);
+            ShowBoard();
+            ShowPattern();
+            //if (layout == Layout.Flat)
+            //    cubeCollider.SetActive(true);
+            //else
+            //    cylinderCollider.SetActive(true);
 
             StartRecording();
         }
 
 
-        if (Input.GetKeyDown("p"))
-            ShowPattern();
+        //if (Input.GetKeyDown("p"))
+        //    ShowPattern();
 
         if (Input.GetKeyDown("l"))
             ChangeLayout();
@@ -269,7 +272,7 @@ public class ReplayManager : MonoBehaviour
                     if (Physics.Raycast(cameraPosition, cameraDirection, out hit, Mathf.Infinity, layerMask))
                     {
                         GameObject gazePoint = Instantiate(gazePointPrefab, hit.point, Quaternion.identity);
-                        gazePoint.transform.localEulerAngles += Vector3.left * 90;
+                        //gazePoint.transform.localEulerAngles += Vector3.left * 90;
                         gazePoint.transform.SetParent(gazePoints.transform);
 
                         //if (layout == Layout.Flat)
@@ -292,41 +295,41 @@ public class ReplayManager : MonoBehaviour
         int gazeCount = gazePointList.Count;
         for (int i = 0; i < gazeCount; i++)
         {
-            gazePointList[i].transform.position = new Vector3(gazePointList[i].transform.position.x, 0, gazePointList[i].transform.position.z);
+            //gazePointList[i].transform.position = new Vector3(gazePointList[i].transform.position.x, 0, gazePointList[i].transform.position.z);
             gazePointList[i].transform.localScale += Vector3.one * i * 0.03f / gazePointList.Count;
         }
-        for (int i = gazePointList.Count - 1; i >= 0; i--)
-        {
-            if (i % 2 == 0)
-            {
-                Destroy(gazePointList[i]);
-                gazePointList.RemoveAt(i);
-            }
-        }
-        for (int i = gazePointList.Count - 1; i >= 0; i--)
-        {
-            if (i % 2 == 0)
-            {
-                Destroy(gazePointList[i]);
-                gazePointList.RemoveAt(i);
-            }
-        }
-        for (int i = gazePointList.Count - 1; i >= 0; i--)
-        {
-            if (i % 2 == 0)
-            {
-                Destroy(gazePointList[i]);
-                gazePointList.RemoveAt(i);
-            }
-        }
-        for (int i = gazePointList.Count - 1; i >= 0; i--)
-        {
-            if (i % 2 == 0)
-            {
-                Destroy(gazePointList[i]);
-                gazePointList.RemoveAt(i);
-            }
-        }
+        //for (int i = gazePointList.Count - 1; i >= 0; i--)
+        //{
+        //    if (i % 2 == 0)
+        //    {
+        //        Destroy(gazePointList[i]);
+        //        gazePointList.RemoveAt(i);
+        //    }
+        //}
+        //for (int i = gazePointList.Count - 1; i >= 0; i--)
+        //{
+        //    if (i % 2 == 0)
+        //    {
+        //        Destroy(gazePointList[i]);
+        //        gazePointList.RemoveAt(i);
+        //    }
+        //}
+        //for (int i = gazePointList.Count - 1; i >= 0; i--)
+        //{
+        //    if (i % 2 == 0)
+        //    {
+        //        Destroy(gazePointList[i]);
+        //        gazePointList.RemoveAt(i);
+        //    }
+        //}
+        //for (int i = gazePointList.Count - 1; i >= 0; i--)
+        //{
+        //    if (i % 2 == 0)
+        //    {
+        //        Destroy(gazePointList[i]);
+        //        gazePointList.RemoveAt(i);
+        //    }
+        //}
     }
 
     private void ChangeLayout() {
@@ -499,7 +502,7 @@ public class ReplayManager : MonoBehaviour
 
         switch (localLayout) {
             case Layout.Flat:
-                transform.localPosition = new Vector3(0, adjustedHeight, -1);
+                transform.localPosition = new Vector3(0, adjustedHeight, 0);
                 //GameObject.Find("PreferableStand").transform.localPosition = new Vector3(0, 0.01f, 0);
                 break;
             case Layout.FullCircle:
@@ -523,12 +526,12 @@ public class ReplayManager : MonoBehaviour
             case Layout.Flat:
                 xValue = (index - (row * numberOfColumns) - (numberOfColumns / 2.0f - 0.5f)) * hDelta;
                 yValue = (numberOfRows - (row + 1)) * vDelta;
-                zValue = 2;
+                zValue = 1;
                 break;
             case Layout.LimitedFlat:
                 xValue = (index - (row * numberOfColumns) - (numberOfColumns / 2.0f - 0.5f)) * hDelta;
                 yValue = (numberOfRows - (row + 1)) * vDelta;
-                zValue = 2;
+                zValue = 1;
                 break;
             case Layout.FullCircle:
                 xValue = -Mathf.Cos((index - (row * numberOfColumns)) * Mathf.PI / (numberOfColumns / 2.0f)) * ((numberOfColumns - 1) * hDelta / (2.0f * Mathf.PI));

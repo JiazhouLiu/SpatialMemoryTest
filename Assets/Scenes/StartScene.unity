@@ -768,9 +768,10 @@ MonoBehaviour:
   trackPadText: {fileID: 477943194}
   CardGame: {fileID: 863142847}
   Cards: {fileID: 380972715}
-  FilterCube: {fileID: 0}
-  ExperimentID: 0
-  TrialNumber: 1
+  ExperimentID: 1
+  TrialNumber: 0
+  blindfold: 0
+  landmark: 1
 --- !u!1 &719467366
 GameObject:
   m_ObjectHideFlags: 0
