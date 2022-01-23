@@ -9,6 +9,15 @@ using System.IO;
 using VRTK.GrabAttachMechanics;
 using System.Linq;
 
+public enum Condition
+{
+    Baseline,
+    Blindfold,
+    Landmark,
+    SemiCircle
+}
+
+
 public class ReplayManager : MonoBehaviour
 {
     [Header("Prefabs")]
@@ -34,11 +43,12 @@ public class ReplayManager : MonoBehaviour
     public int numberOfColumns;
 
     [Header("Variables")]
-    public string folder;
+    public Condition condition;
     public int participantNumber;
     public float adjustedHeight;
     private Layout layout;
     private int difficultyLevel = 5;
+    public bool automation = true;
 
     /// <summary>
     /// local variables
@@ -86,6 +96,10 @@ public class ReplayManager : MonoBehaviour
     GradientColorKey[] colorKey;
     GradientAlphaKey[] alphaKey;
 
+    private StreamWriter RPStreamWriter;
+    private const string format = "F4";
+    private bool continueFlag = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -115,17 +129,23 @@ public class ReplayManager : MonoBehaviour
 
         //ShowBoard();
 
-        string FilePath = "Assets/ExperimentData/ExperimentLog/" + folder + "/Participant " + participantNumber + "/Participant_" + participantNumber + "_HeadAndHand.csv";
+        string FilePath = "Assets/ExperimentData/ExperimentLog/" + condition.ToString() + "/Participant " + participantNumber + "/Participant_" + participantNumber + "_HeadAndHand.csv";
         lines = File.ReadAllText(FilePath).Split(lineSeperater);
         lines = lines.Skip(1).ToArray();
+
+        string[] data = lines[0].Trim().Split(fieldSeperator);
+        float height = float.Parse(data[9]);
+        adjustedHeight = height - 0.5f;
 
         gradient = new Gradient();
 
         // Populate the color keys at the relative time 0 and 1 (0 and 100%)
         colorKey = new GradientColorKey[2];
-        colorKey[0].color = new Color(127f / 255f, 191f / 255f, 123f / 255f);
+        //colorKey[0].color = new Color(127f / 255f, 191f / 255f, 123f / 255f);
+        colorKey[0].color = Color.green;
         colorKey[0].time = 0.0f;
-        colorKey[1].color = new Color(175f / 255f, 141f / 255f, 195f / 255f);
+        //colorKey[1].color = new Color(175f / 255f, 141f / 255f, 195f / 255f);
+        colorKey[1].color = Color.blue;
         colorKey[1].time = 1.0f;
 
         // Populate the alpha  keys at relative time 0 and 1  (0 and 100%)
@@ -136,6 +156,12 @@ public class ReplayManager : MonoBehaviour
         alphaKey[1].time = 1.0f;
 
         gradient.SetKeys(colorKey, alphaKey);
+
+
+        // write relative position between gaze and position
+        FilePath = "Assets/ExperimentData/ExperimentLog/" + condition.ToString() + "/Participant " + participantNumber + "/Participant_" + participantNumber + "_RelativePosition.txt";
+        RPStreamWriter = new StreamWriter(FilePath, false);
+        RPStreamWriter.WriteLine("Timestamp\tTrialNo\tPosition.x\tPosition.y");
     }
 
     // Update is called once per frame
@@ -156,7 +182,8 @@ public class ReplayManager : MonoBehaviour
         //    trialNo++;
         //    ShowBoard();
         //}
-        if (Input.GetKeyDown("r")) {
+        if (Input.GetKeyDown("r") || continueFlag) {
+            continueFlag = false;
             foreach (GameObject go in gazePointList)
                 Destroy(go);
             foreach (GameObject go in pathPointList)
@@ -168,17 +195,61 @@ public class ReplayManager : MonoBehaviour
             cylinderCollider.SetActive(false);
 
             trialNo++;
-            
+
+            if (trialNo == 21) {
+                participantNumber++;
+                trialNo = 0;
+                if (participantNumber <= 12)
+                {
+                    RPStreamWriter.Close();
+
+                    if (participantNumber % 2 == 1)
+                        experimentSequence = 1;
+                    else
+                        experimentSequence = 2;
+
+                    LvL5FlatTaskList = new List<string>();
+                    LvL5CircularTaskList = new List<string>();
+
+                    ReadPatternsFromInput();
+
+                    string FilePath = "Assets/ExperimentData/ExperimentLog/" + condition.ToString() + "/Participant " + participantNumber + "/Participant_" + participantNumber + "_HeadAndHand.csv";
+                    lines = File.ReadAllText(FilePath).Split(lineSeperater);
+                    lines = lines.Skip(1).ToArray();
+
+                    string[] data = lines[0].Trim().Split(fieldSeperator);
+                    float height = float.Parse(data[9]);
+                    adjustedHeight = height - 0.5f;
+
+                    FilePath = "Assets/ExperimentData/ExperimentLog/" + condition.ToString() + "/Participant " + participantNumber + "/Participant_" + participantNumber + "_RelativePosition.txt";
+                    RPStreamWriter = new StreamWriter(FilePath, false);
+                    RPStreamWriter.WriteLine("Timestamp\tTrialNo\tPosition.x\tPosition.y");
+                }
+                else
+                    QuitGame();
+                
+            }
+
+
             if (GetCurrentCardsLayout() != Layout.NULL)
                 layout = GetCurrentCardsLayout();
-            ShowBoard();
-            ShowPattern();
+
+
+            //ShowPattern();
             //if (layout == Layout.Flat)
             //    cubeCollider.SetActive(true);
             //else
             //    cylinderCollider.SetActive(true);
-
-            StartRecording();
+            if (layout == Layout.Flat)
+            {
+                ShowBoard();
+                StartRecording();
+            }
+            else {
+                if(automation)
+                    continueFlag = true;
+            }
+                
         }
 
 
@@ -280,6 +351,17 @@ public class ReplayManager : MonoBehaviour
                         //else
                         //    gazePoint.transform.localPosition = new Vector3(gazePoint.transform.localPosition.x, gazePoint.transform.localPosition.y, gazePoint.transform.localPosition.z - 0.01f);
                         gazePointList.Add(gazePoint);
+
+                        if (GetCurrentCardsLayout() == Layout.Flat && trialNo > 2) {
+                            Vector2 relativePosition = new Vector2(gazePoint.transform.position.x, gazePoint.transform.position.y) - new Vector2(cameraPosition.x, cameraPosition.y);
+                            RPStreamWriter.WriteLine("{0}\t{1}\t{2}\t{3}",
+                                float.Parse(data[0]).ToString(format),
+                                trialNo.ToString(format),
+                                relativePosition.x.ToString(format),
+                                relativePosition.y.ToString(format)
+                            );
+                            RPStreamWriter.Flush();
+                        }
                     }
                     count++;
                 }
@@ -287,17 +369,28 @@ public class ReplayManager : MonoBehaviour
 
         }
 
-        for (int i = 0; i < pathPointList.Count; i++) {
-            //pathPointList[i].GetComponent<SpriteRenderer>().color = gradient.Evaluate((float)i / pathPointList.Count);
-            pathPointList[i].transform.position = new Vector3(pathPointList[i].transform.position.x, 0, pathPointList[i].transform.position.z);
-            pathPointList[i].transform.localScale += Vector3.one * i * 0.05f / pathPointList.Count;
-        }
-        int gazeCount = gazePointList.Count;
-        for (int i = 0; i < gazeCount; i++)
+        if (automation)
         {
-            //gazePointList[i].transform.position = new Vector3(gazePointList[i].transform.position.x, 0, gazePointList[i].transform.position.z);
-            gazePointList[i].transform.localScale += Vector3.one * i * 0.03f / gazePointList.Count;
+            continueFlag = true;
         }
+        else {
+            for (int i = 0; i < pathPointList.Count; i++)
+            {
+                //pathPointList[i].GetComponent<SpriteRenderer>().color = gradient.Evaluate((float)i / pathPointList.Count);
+                pathPointList[i].transform.position = new Vector3(pathPointList[i].transform.position.x, 0, pathPointList[i].transform.position.z);
+                //pathPointList[i].transform.localScale += Vector3.one * i * 0.05f / pathPointList.Count;
+                pathPointList[i].GetComponent<SpriteRenderer>().color = gradient.Evaluate(i * 1.00f / gazePointList.Count);
+            }
+
+            int gazeCount = gazePointList.Count;
+            for (int i = 0; i < gazeCount; i++)
+            {
+                //gazePointList[i].transform.position = new Vector3(gazePointList[i].transform.position.x, 0, gazePointList[i].transform.position.z);
+                //gazePointList[i].transform.localScale += Vector3.one * i * 0.03f / gazePointList.Count;
+                gazePointList[i].GetComponent<SpriteRenderer>().color = gradient.Evaluate(i * 1.00f / gazePointList.Count);
+            }
+        }
+
         //for (int i = gazePointList.Count - 1; i >= 0; i--)
         //{
         //    if (i % 2 == 0)
@@ -463,8 +556,8 @@ public class ReplayManager : MonoBehaviour
                 cards[currentPattern[i]].GetComponent<Card>().filled = true;
             }
         }
-        else
-            Debug.LogError("Pattern Used Up!!");
+        //else
+            //Debug.LogError("Pattern Used Up!!");
 
         return cards;
     }
@@ -742,5 +835,10 @@ public class ReplayManager : MonoBehaviour
     public int RandomNumber(int min, int max)
     {
         return Random.Range(min, max);
+    }
+
+    public void OnApplicationQuit()
+    {
+        RPStreamWriter.Close();
     }
 }

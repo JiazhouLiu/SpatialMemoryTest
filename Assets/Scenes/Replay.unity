@@ -486,6 +486,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5482686452322875367, guid: a58b43788b50d1449a50308a084f0161,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5482686452551469208, guid: a58b43788b50d1449a50308a084f0161,
         type: 3}
       propertyPath: m_Name
@@ -1764,9 +1769,10 @@ MonoBehaviour:
   distractorTime: 15
   numberOfRows: 3
   numberOfColumns: 12
-  folder: Landmark
+  condition: 3
   participantNumber: 1
-  adjustedHeight: 0.98
+  adjustedHeight: 1.1
+  automation: 1
   mainHand: 1
   gameState: 0
   trialNo: 0
@@ -4061,7 +4067,7 @@ PrefabInstance:
     - target: {fileID: 1499780970377259070, guid: 123cdcb88487b484bb5e7576b2f2c615,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4292961617282952167, guid: 123cdcb88487b484bb5e7576b2f2c615,
         type: 3}
@@ -4242,6 +4248,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663631403067959160, guid: 5d3c70c0b82c51046b527b71d036bd14,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6663631403067959161, guid: 5d3c70c0b82c51046b527b71d036bd14,
         type: 3}
