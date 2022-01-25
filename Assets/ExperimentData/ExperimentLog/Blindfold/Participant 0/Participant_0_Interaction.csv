@@ -1,1 +1,4 @@
 TimeSinceStart,TrialNo,TrialID,ParticipantID,Layout,Info,CardSeen,CardSelected,CardAnswered,CardPlayed
+0,1,Training,0,Flat,Prepare,,,
+0.7644445,1,Training,0,Flat,ShowPattern,,,
+0.7866667,1,Training,0,Flat,Card,30,,,

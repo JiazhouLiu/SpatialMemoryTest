@@ -1274,7 +1274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661852685}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: -1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1321,10 +1321,11 @@ MonoBehaviour:
   distractorTime: 15
   numberOfRows: 3
   numberOfColumns: 12
-  layout: 0
+  layout: 4
   difficultyLevel: 5
-  BlindFold: 1
+  BlindFold: 0
   Landmark: 0
+  SemiCircle: 1
   mainHand: 1
   gameState: 0
   shootTotalNumber: 0
@@ -2091,6 +2092,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5478220260907850581, guid: a58b43788b50d1449a50308a084f0161,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5482686451856237850, guid: a58b43788b50d1449a50308a084f0161,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2215,6 +2221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482686453433910136, guid: a58b43788b50d1449a50308a084f0161,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a58b43788b50d1449a50308a084f0161, type: 3}

@@ -21,6 +21,7 @@ public class StartSceneScript : MonoBehaviour
     public static int distratorType = 1;
     public static bool Blindfold;
     public static bool Landmark;
+    public static bool SemiCircle;
 
     [Header("Do Not Change")]
     public int trainingCount = 0; // 0: start 8: GO TO Experiment
@@ -41,6 +42,7 @@ public class StartSceneScript : MonoBehaviour
     public int TrialNumber;
     public bool blindfold;
     public bool landmark;
+    public bool semiCircle;
 
     private VRTK_ControllerEvents rightCE;
 
@@ -72,13 +74,25 @@ public class StartSceneScript : MonoBehaviour
 
         Landmark = landmark;
         Blindfold = blindfold;
+        SemiCircle = semiCircle;
 
         string condition = "";
 
         if (blindfold)
+        {
+            GameObject.Find("PreferableStand").transform.localPosition = new Vector3(0, 0.01f, 0);
             condition = "Blindfold";
+        }
         else if (landmark)
+        {
+            GameObject.Find("PreferableStand").transform.localPosition = new Vector3(0, 0.01f, 0);
             condition = "Landmark";
+        }
+        else if (semiCircle) {
+            GameObject.Find("PreferableStand").transform.localPosition = new Vector3(0, 0.01f, -1);
+            condition = "SemiCircle";
+        }
+            
 
         PublicTrialNumber = TrialNumber;
 

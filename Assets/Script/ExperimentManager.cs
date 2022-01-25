@@ -24,6 +24,7 @@ public enum Layout
     LimitedFlat,
     FullCircle,
     LimitedFullCircle,
+    SemiCircle,
     NULL
 }
 
@@ -68,6 +69,7 @@ public class ExperimentManager : MonoBehaviour
     public int difficultyLevel;
     public bool BlindFold;
     public bool Landmark;
+    public bool SemiCircle;
 
     /// <summary>
     /// local variables
@@ -137,6 +139,7 @@ public class ExperimentManager : MonoBehaviour
     private bool playgroundFlag = false;
     private int basketballScore = 0;
     
+    private float semiCircleSetupOffset = -1;
 
     // log use
     private string trialID;
@@ -184,6 +187,7 @@ public class ExperimentManager : MonoBehaviour
         if (GameObject.Find("MainExperimentManager") != null) {
             BlindFold = StartSceneScript.Blindfold;
             Landmark = StartSceneScript.Landmark;
+            SemiCircle = StartSceneScript.SemiCircle;
         }
         
 
@@ -206,10 +210,21 @@ public class ExperimentManager : MonoBehaviour
 
         string condition = "";
 
-        if (BlindFold)
+        if (BlindFold) {
+            semiCircleSetupOffset = 0;
             condition = "Blindfold";
-        else if (Landmark)
+        }
+        else if (Landmark) {
+            semiCircleSetupOffset = 0;
             condition = "Landmark";
+        }
+        else if (SemiCircle) {
+            semiCircleSetupOffset = -1;
+            condition = "SemiCircle";
+        }
+
+        
+            
 
         // setup writer stream
         string writerFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + StartSceneScript.ParticipantID + "/Participant_" + StartSceneScript.ParticipantID + "_RawData.csv";
@@ -295,8 +310,8 @@ public class ExperimentManager : MonoBehaviour
         }
 
         // change layout shortcut
-        if (Input.GetKeyDown("c"))
-            Changelayout();
+        //if (Input.GetKeyDown("c"))
+            //Changelayout();
 
         if (gameState == GameState.ShowPattern)
             TimerAndCheckScan();
@@ -341,8 +356,9 @@ public class ExperimentManager : MonoBehaviour
                     {
                         case GameState.Prepare:
                             // check position
-                            if (Camera.main.transform.position.x < 0.5f && Camera.main.transform.position.x > -0.5f && Camera.main.transform.position.z < 0.5f &&
-                               Camera.main.transform.position.z > -0.5f) {
+                            if (Camera.main.transform.position.x < 0.5f && Camera.main.transform.position.x > -0.5f && Camera.main.transform.position.z < (0.5f + semiCircleSetupOffset) &&
+                               Camera.main.transform.position.z > (-0.5f + semiCircleSetupOffset))
+                            {
                                 FootPrint.gameObject.SetActive(false);
                                 ShowPattern();
                             }   
@@ -759,8 +775,8 @@ public class ExperimentManager : MonoBehaviour
             //    FilterCube.gameObject.SetActive(false);
 
             // check position
-            if (Camera.main.transform.position.x < 0.4f && Camera.main.transform.position.x > -0.4f && Camera.main.transform.position.z < 0.4f &&
-               Camera.main.transform.position.z > -0.4f)
+            if (Camera.main.transform.position.x < 0.5f && Camera.main.transform.position.x > -0.5f && Camera.main.transform.position.z < (0.5f + semiCircleSetupOffset) &&
+               Camera.main.transform.position.z > (-0.5f + semiCircleSetupOffset))
             {
                 currentGameTask = GetCurrentGameTask();
                 
@@ -782,7 +798,8 @@ public class ExperimentManager : MonoBehaviour
                     Instruction.text = task + "";
                     WriteInteractionToLog("Task: " + task);
 
-                    Instruction.transform.parent.parent.position = new Vector3(0, CardGame.position.y + 1.4f, 0.5f);
+                    Instruction.transform.parent.parent.position = new Vector3(0, CardGame.position.y + 1.4f, 0f);
+                    InstructionTimer.transform.parent.parent.position = new Vector3(InstructionTimer.transform.parent.parent.position.x, InstructionTimer.transform.parent.parent.position.y, 0.8f);
                 }
 
                 FootPrint.gameObject.SetActive(false);
@@ -831,8 +848,8 @@ public class ExperimentManager : MonoBehaviour
             //}
 
             // check position
-            if (Camera.main.transform.position.x < 0.4f && Camera.main.transform.position.x > -0.4f && Camera.main.transform.position.z < 0.4f &&
-               Camera.main.transform.position.z > -0.4f)
+            if (Camera.main.transform.position.x < 0.4f && Camera.main.transform.position.x > -0.4f && Camera.main.transform.position.z < (0.4f + semiCircleSetupOffset) &&
+               Camera.main.transform.position.z > (-0.5f + semiCircleSetupOffset))
             {
                 InstructionTimer.text = "";
                 FootPrint.gameObject.SetActive(false);
@@ -966,7 +983,7 @@ public class ExperimentManager : MonoBehaviour
 
             if ((mainHandCE.transform.parent.position.x > 0.85f || mainHandCE.transform.parent.position.x < -0.85f) ||
                 (mainHandCE.transform.parent.position.y > 2.36f || mainHandCE.transform.parent.position.y < 0.63f) ||
-                (mainHandCE.transform.parent.position.z > 0.67f || mainHandCE.transform.parent.position.z < 0.31f)) {
+                (mainHandCE.transform.parent.position.z > 0.67f + (semiCircleSetupOffset + 0.5f) || mainHandCE.transform.parent.position.z < 0.31f + (semiCircleSetupOffset + 0.5f))) {
                 insideCards = false;
             }
 
@@ -1075,13 +1092,23 @@ public class ExperimentManager : MonoBehaviour
             case 1:
                 if (trialNo % 2 == 1)
                     return Layout.Flat;
-                else if(trialNo <= 20)
-                    return Layout.FullCircle;
+                else if (trialNo <= 20)
+                {
+                    if (!SemiCircle)
+                        return Layout.FullCircle;
+                    else
+                        return Layout.SemiCircle;
+                }
                 else
                     return Layout.LimitedFlat;
             case 2:
                 if (trialNo % 2 == 1)
-                    return Layout.FullCircle;
+                {
+                    if (!SemiCircle)
+                        return Layout.FullCircle;
+                    else
+                        return Layout.SemiCircle;
+                }
                 else
                     return Layout.Flat;
             default:
@@ -1237,42 +1264,60 @@ public class ExperimentManager : MonoBehaviour
             //    }
             //}
             //else {
-                if (layout == Layout.Flat || layout == Layout.LimitedFlat)
+            if (layout == Layout.Flat || layout == Layout.LimitedFlat)
+            {
+                if (LvL5FlatTaskList.Count > 0)
                 {
-                    if (LvL5FlatTaskList.Count > 0)
+                    int[] PatternID = new int[difficultyLevel];
+                    string[] PatternIDString = new string[difficultyLevel];
+
+                    PatternIDString = LvL5FlatTaskList[0].Split(fieldSeperator);
+
+                    LvL5FlatTaskList.RemoveAt(0);
+
+                    for (int i = 0; i < difficultyLevel; i++)
                     {
-                        int[] PatternID = new int[difficultyLevel];
-                        string[] PatternIDString = new string[difficultyLevel];
-
-                        PatternIDString = LvL5FlatTaskList[0].Split(fieldSeperator);
-
-                        LvL5FlatTaskList.RemoveAt(0);
-
-                        for (int i = 0; i < difficultyLevel; i++)
-                        {
-                            PatternID[i] = int.Parse(PatternIDString[i]);
-                        }
-                        return PatternID;
+                        PatternID[i] = int.Parse(PatternIDString[i]);
                     }
+                    return PatternID;
                 }
-                else if (layout == Layout.FullCircle)
+            }
+            else if (layout == Layout.FullCircle)
+            {
+                if (LvL5CircularTaskList.Count > 0)
                 {
-                    if (LvL5CircularTaskList.Count > 0)
+                    int[] PatternID = new int[difficultyLevel];
+                    string[] PatternIDString = new string[difficultyLevel];
+
+                    PatternIDString = LvL5CircularTaskList[0].Split(fieldSeperator);
+
+                    LvL5CircularTaskList.RemoveAt(0);
+
+                    for (int i = 0; i < difficultyLevel; i++)
                     {
-                        int[] PatternID = new int[difficultyLevel];
-                        string[] PatternIDString = new string[difficultyLevel];
-
-                        PatternIDString = LvL5CircularTaskList[0].Split(fieldSeperator);
-
-                        LvL5CircularTaskList.RemoveAt(0);
-
-                        for (int i = 0; i < difficultyLevel; i++)
-                        {
-                            PatternID[i] = int.Parse(PatternIDString[i]);
-                        }
-                        return PatternID;
+                        PatternID[i] = int.Parse(PatternIDString[i]);
                     }
+                    return PatternID;
                 }
+            }
+            else if (layout == Layout.SemiCircle)
+            {
+                if (LvL5CircularTaskList.Count > 0)
+                {
+                    int[] PatternID = new int[difficultyLevel];
+                    string[] PatternIDString = new string[difficultyLevel];
+
+                    PatternIDString = LvL5CircularTaskList[0].Split(fieldSeperator);
+
+                    LvL5CircularTaskList.RemoveAt(0);
+
+                    for (int i = 0; i < difficultyLevel; i++)
+                    {
+                        PatternID[i] = int.Parse(PatternIDString[i]);
+                    }
+                    return PatternID;
+                }
+            }
             //} 
         }
         return null;
@@ -1318,6 +1363,9 @@ public class ExperimentManager : MonoBehaviour
             case 3:
                 layout = Layout.Flat;
                 break;
+            case 4:
+                layout = Layout.SemiCircle;
+                break;
             default:
                 break;
         }
@@ -1361,6 +1409,17 @@ public class ExperimentManager : MonoBehaviour
                     card.transform.localEulerAngles += Vector3.up * 180;
                     Destroy(center);
                 }
+                else if (layout == Layout.SemiCircle) {
+                    GameObject center = new GameObject();
+                    center.transform.SetParent(transform);
+                    center.transform.localPosition = card.transform.localPosition;
+                    center.transform.localPosition = new Vector3(0, center.transform.localPosition.y, 0);
+
+                    card.transform.LookAt(center.transform.position);
+
+                    card.transform.localEulerAngles += Vector3.up * 180;
+                    Destroy(center);
+                }
                 cards.Add(card);
 
                 k++;
@@ -1394,11 +1453,22 @@ public class ExperimentManager : MonoBehaviour
 
                 localCards[index].transform.localEulerAngles = new Vector3(0, localCards[index].transform.localEulerAngles.y, 0);
 
-                if (localLayout != Layout.FullCircle && localLayout != Layout.LimitedFullCircle)
+                if (localLayout == Layout.Flat && localLayout == Layout.LimitedFlat)
                     localCards[index].transform.localEulerAngles = new Vector3(0, 0, 0);
-                else // FULL CIRCLE
+                else if (localLayout == Layout.FullCircle && localLayout == Layout.LimitedFullCircle)// FULL CIRCLE
                 {
                     // change orientation
+                    GameObject center = new GameObject();
+                    center.transform.SetParent(this.transform);
+                    center.transform.localPosition = localCards[index].transform.localPosition;
+                    center.transform.localPosition = new Vector3(0, center.transform.localPosition.y, 0);
+
+                    localCards[index].transform.LookAt(center.transform.position);
+
+                    localCards[index].transform.localEulerAngles += Vector3.up * 180;
+                    Destroy(center);
+                }
+                else if (localLayout == Layout.SemiCircle) {
                     GameObject center = new GameObject();
                     center.transform.SetParent(this.transform);
                     center.transform.localPosition = localCards[index].transform.localPosition;
@@ -1412,12 +1482,15 @@ public class ExperimentManager : MonoBehaviour
             }
         }
 
-        CardGame.localPosition = new Vector3(0, adjustedHeight, 0);
+        if(SemiCircle)
+            CardGame.localPosition = new Vector3(0, adjustedHeight, -0.5f);
+        else
+            CardGame.localPosition = new Vector3(0, adjustedHeight, 0);
 
         switch (localLayout) {
             case Layout.Flat:
                 transform.localPosition = new Vector3(0, adjustedHeight, -1);
-                GameObject.Find("PreferableStand").transform.localPosition = new Vector3(0, 0.01f, 0);
+                GameObject.Find("PreferableStand").transform.localPosition = new Vector3(0, 0.01f, semiCircleSetupOffset);
                 //FilterCube.gameObject.SetActive(false);
                 //EdgeIndicator.gameObject.SetActive(false);
                 break;
@@ -1436,6 +1509,12 @@ public class ExperimentManager : MonoBehaviour
             case Layout.LimitedFullCircle:
                 transform.localPosition = new Vector3(0, adjustedHeight, 0);
                 GameObject.Find("PreferableStand").transform.localPosition = new Vector3(0, 0.01f, 0);
+                //FilterCube.gameObject.SetActive(true);
+                //EdgeIndicator.gameObject.SetActive(true);
+                break;
+            case Layout.SemiCircle:
+                transform.localPosition = new Vector3(0, adjustedHeight, -1);
+                GameObject.Find("PreferableStand").transform.localPosition = new Vector3(0, 0.01f, semiCircleSetupOffset);
                 //FilterCube.gameObject.SetActive(true);
                 //EdgeIndicator.gameObject.SetActive(true);
                 break;
@@ -1472,6 +1551,11 @@ public class ExperimentManager : MonoBehaviour
                 xValue = -Mathf.Cos((index - (row * numberOfColumns)) * Mathf.PI / (numberOfColumns / 2.0f)) * ((numberOfColumns - 1) * hDelta / (2.0f * Mathf.PI));
                 yValue = (numberOfRows - (row + 1)) * vDelta;
                 zValue = Mathf.Sin((index - (row * numberOfColumns)) * Mathf.PI / (numberOfColumns / 2.0f)) * ((numberOfColumns - 1) * hDelta / (2.0f * Mathf.PI));
+                break;
+            case Layout.SemiCircle:
+                xValue = -Mathf.Cos((index - (row * numberOfColumns)) * Mathf.PI / ((numberOfColumns - 1) / 2.0f) / 2) * ((numberOfColumns - 1) * hDelta / (Mathf.PI));
+                yValue = (numberOfRows - (row + 1)) * vDelta;
+                zValue = Mathf.Sin((index - (row * numberOfColumns)) * Mathf.PI / ((numberOfColumns - 1) / 2.0f) / 2) * ((numberOfColumns - 1) * hDelta / (Mathf.PI));
                 break;
             default:
                 break;
@@ -1891,6 +1975,8 @@ public class ExperimentManager : MonoBehaviour
                 return "Limited Flat";
             case Layout.LimitedFullCircle:
                 return "Limited Full Circle";
+            case Layout.SemiCircle:
+                return "Semi-Circle";
             default:
                 return "NULL";
         }

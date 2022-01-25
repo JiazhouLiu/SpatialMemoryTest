@@ -1,0 +1,706 @@
+TimeSinceStart,TrialNo,TrialID,ParticipantID,Layout,Info,CardSeen,CardSelected,CardAnswered,CardPlayed
+136.9311,1,Training,12,Full Circle,Prepare,,,
+152.7756,1,Training,12,Full Circle,ShowPattern,,,
+153.6422,1,Training,12,Full Circle,Card,15,,,
+154.3422,1,Training,12,Full Circle,Card,25,,,
+155.2422,1,Training,12,Full Circle,Card,10,,,
+158.2645,1,Training,12,Full Circle,Card,,10,,
+159.7089,1,Training,12,Full Circle,Card,35,,,
+162.42,1,Training,12,Full Circle,Card,,35,,
+165.52,1,Training,12,Full Circle,Card,,25,,
+167.0645,1,Training,12,Full Circle,Card,6,,,
+167.4533,1,Training,12,Full Circle,Card,,15,,
+168.2533,1,Training,12,Full Circle,Card,,6,,
+168.2533,1,Training,12,Full Circle,Distractor,,,
+168.2533,1,Training,12,Full Circle,Task: 5,,,
+171.7756,1,Training,12,Full Circle,CardGame,,,,5
+171.7756,1,Training,12,Full Circle,Task: 3,,,
+174.9756,1,Training,12,Full Circle,CardGame,,,,3
+174.9756,1,Training,12,Full Circle,Task: 1,,,
+177.0756,1,Training,12,Full Circle,CardGame,,,,1
+177.0756,1,Training,12,Full Circle,Task: 5,,,
+178.32,1,Training,12,Full Circle,CardGame,,,,1
+178.32,1,Training,12,Full Circle,Task: 4,,,
+179.8756,1,Training,12,Full Circle,CardGame,,,,4
+179.8756,1,Training,12,Full Circle,Task: 5,,,
+181.9978,1,Training,12,Full Circle,CardGame,,,,5
+181.9978,1,Training,12,Full Circle,Task: 2,,,
+184.0867,1,Training,12,Full Circle,CardGame,,,,2
+184.0867,1,Training,12,Full Circle,Task: 5,,,
+187.2089,1,Training,12,Full Circle,SelectedCards,,,
+189.5756,1,Training,12,Full Circle,Card,,,10,
+191.32,1,Training,12,Full Circle,Card,,,12,
+194.8756,1,Training,12,Full Circle,Card,,,28,
+196.8089,1,Training,12,Full Circle,Card,,,6,
+202.5422,1,Training,12,Full Circle,Card,,,19,
+204.8645,1,Training,12,Full Circle,Result,,,
+257.1756,2,Training,12,Flat,Prepare,,,
+261.5756,2,Training,12,Flat,ShowPattern,,,
+262.52,2,Training,12,Flat,Card,2,,,
+262.6089,2,Training,12,Flat,Card,25,,,
+265.8978,2,Training,12,Flat,Card,,25,,
+267.0978,2,Training,12,Flat,Card,,2,,
+268.0645,2,Training,12,Flat,Card,30,,,
+268.1978,2,Training,12,Flat,Card,20,,,
+269.4422,2,Training,12,Flat,Card,,30,,
+270.82,2,Training,12,Flat,Card,11,,,
+272.8533,2,Training,12,Flat,Card,,20,,
+275.3978,2,Training,12,Flat,Card,,11,,
+276.5311,2,Training,12,Flat,Distractor,,,
+277.0645,2,Training,12,Flat,Task: 2,,,
+279.0756,2,Training,12,Flat,CardGame,,,,2
+279.0756,2,Training,12,Flat,Task: 7,,,
+281.6645,2,Training,12,Flat,CardGame,,,,7
+281.6645,2,Training,12,Flat,Task: 2,,,
+284.5311,2,Training,12,Flat,CardGame,,,,2
+284.5311,2,Training,12,Flat,Task: 4,,,
+285.8533,2,Training,12,Flat,CardGame,,,,4
+285.8533,2,Training,12,Flat,Task: 3,,,
+289.3755,2,Training,12,Flat,CardGame,,,,3
+289.3755,2,Training,12,Flat,Task: 2,,,
+291.6311,2,Training,12,Flat,CardGame,,,,2
+291.6311,2,Training,12,Flat,Task: 2,,,
+292.02,2,Training,12,Flat,SelectedCards,,,
+296.0422,2,Training,12,Flat,Card,,,1,
+296.9533,2,Training,12,Flat,Card,,,26,
+301.2422,2,Training,12,Flat,Card,,,20,
+304.1422,2,Training,12,Flat,Card,,,11,
+307.9089,2,Training,12,Flat,Card,,,30,
+309.8533,2,Training,12,Flat,Result,,,
+313.0756,3,1,12,Full Circle,Prepare,,,
+335.62,3,1,12,Full Circle,ShowPattern,,,
+336.5645,3,1,12,Full Circle,Card,0,,,
+338.3867,3,1,12,Full Circle,Card,,0,,
+339.3978,3,1,12,Full Circle,Card,16,,,
+340.4533,3,1,12,Full Circle,Card,,16,,
+340.9533,3,1,12,Full Circle,Card,6,,,
+342.2533,3,1,12,Full Circle,Card,,6,,
+342.8867,3,1,12,Full Circle,Card,20,,,
+344.0089,3,1,12,Full Circle,Card,,20,,
+344.6089,3,1,12,Full Circle,Card,34,,,
+346.02,3,1,12,Full Circle,Card,,34,,
+350.5756,3,1,12,Full Circle,Distractor,,,
+350.5756,3,1,12,Full Circle,Task: 3,,,
+352.7534,3,1,12,Full Circle,CardGame,,,,3
+352.7534,3,1,12,Full Circle,Task: 3,,,
+354.5311,3,1,12,Full Circle,CardGame,,,,3
+354.5311,3,1,12,Full Circle,Task: 2,,,
+356.7422,3,1,12,Full Circle,CardGame,,,,2
+356.7422,3,1,12,Full Circle,Task: 3,,,
+358.5645,3,1,12,Full Circle,CardGame,,,,3
+358.5645,3,1,12,Full Circle,Task: 1,,,
+360.7534,3,1,12,Full Circle,CardGame,,,,1
+360.7534,3,1,12,Full Circle,Task: 1,,,
+363.2645,3,1,12,Full Circle,CardGame,,,,1
+363.2645,3,1,12,Full Circle,Task: 1,,,
+364.62,3,1,12,Full Circle,CardGame,,,,1
+364.62,3,1,12,Full Circle,Task: 2,,,
+365.52,3,1,12,Full Circle,SelectedCards,,,
+367.82,3,1,12,Full Circle,Card,,,0,
+371.4867,3,1,12,Full Circle,Card,,,2,
+374.02,3,1,12,Full Circle,Card,,,19,
+375.8756,3,1,12,Full Circle,Card,,,31,
+379.1978,3,1,12,Full Circle,Card,,,34,
+381.52,3,1,12,Full Circle,Result,,,
+384.02,4,2,12,Flat,Prepare,,,
+387.3533,4,2,12,Flat,ShowPattern,,,
+388.1867,4,2,12,Flat,Card,17,,,
+388.3089,4,2,12,Flat,Card,25,,,
+388.5089,4,2,12,Flat,Card,27,,,
+390.8978,4,2,12,Flat,Card,,25,,
+392.9978,4,2,12,Flat,Card,,27,,
+395.5756,4,2,12,Flat,Card,,17,,
+395.9533,4,2,12,Flat,Card,7,,,
+396.3644,4,2,12,Flat,Card,11,,,
+398.6534,4,2,12,Flat,Card,,7,,
+401.6756,4,2,12,Flat,Card,,11,,
+402.3089,4,2,12,Flat,Distractor,,,
+403.5867,4,2,12,Flat,Task: 1,,,
+405.6534,4,2,12,Flat,CardGame,,,,1
+405.6534,4,2,12,Flat,Task: 5,,,
+407.1756,4,2,12,Flat,CardGame,,,,5
+407.1756,4,2,12,Flat,Task: 1,,,
+408.8089,4,2,12,Flat,CardGame,,,,1
+408.8089,4,2,12,Flat,Task: 4,,,
+411.0756,4,2,12,Flat,CardGame,,,,4
+411.0756,4,2,12,Flat,Task: 1,,,
+412.2867,4,2,12,Flat,CardGame,,,,1
+412.2867,4,2,12,Flat,Task: 7,,,
+413.92,4,2,12,Flat,CardGame,,,,7
+413.92,4,2,12,Flat,Task: 8,,,
+415.02,4,2,12,Flat,CardGame,,,,8
+415.02,4,2,12,Flat,Task: 7,,,
+416.3756,4,2,12,Flat,CardGame,,,,7
+416.3756,4,2,12,Flat,Task: 5,,,
+417.7645,4,2,12,Flat,CardGame,,,,5
+417.7645,4,2,12,Flat,Task: 4,,,
+418.5422,4,2,12,Flat,SelectedCards,,,
+422.12,4,2,12,Flat,Card,,,25,
+424.6422,4,2,12,Flat,Card,,,27,
+426.2089,4,2,12,Flat,Card,,,17,
+428.42,4,2,12,Flat,Card,,,8,
+430.6867,4,2,12,Flat,Card,,,11,
+431.5089,4,2,12,Flat,Result,,,
+434.3644,5,3,12,Full Circle,Prepare,,,
+436.0645,5,3,12,Full Circle,ShowPattern,,,
+436.6089,5,3,12,Full Circle,Card,1,,,
+438.5422,5,3,12,Full Circle,Card,11,,,
+439.7422,5,3,12,Full Circle,Card,,11,,
+440.9867,5,3,12,Full Circle,Card,,1,,
+441.5533,5,3,12,Full Circle,Card,16,,,
+442.3867,5,3,12,Full Circle,Card,,16,,
+445.8089,5,3,12,Full Circle,Card,34,,,
+448.2422,5,3,12,Full Circle,Card,,34,,
+453.8089,5,3,12,Full Circle,Card,26,,,
+454.6311,5,3,12,Full Circle,Card,,26,,
+454.6311,5,3,12,Full Circle,Distractor,,,
+454.6311,5,3,12,Full Circle,Task: 4,,,
+455.02,5,3,12,Full Circle,CardGame,,,,3
+455.02,5,3,12,Full Circle,Task: 4,,,
+457.1756,5,3,12,Full Circle,CardGame,,,,4
+457.1756,5,3,12,Full Circle,Task: 3,,,
+458.8978,5,3,12,Full Circle,CardGame,,,,3
+458.8978,5,3,12,Full Circle,Task: 3,,,
+462.0978,5,3,12,Full Circle,CardGame,,,,3
+462.0978,5,3,12,Full Circle,Task: 5,,,
+464.1756,5,3,12,Full Circle,CardGame,,,,5
+464.1756,5,3,12,Full Circle,Task: 5,,,
+467.9311,5,3,12,Full Circle,CardGame,,,,5
+467.9311,5,3,12,Full Circle,Task: 8,,,
+469.82,5,3,12,Full Circle,CardGame,,,,8
+469.82,5,3,12,Full Circle,Task: 5,,,
+472.2311,5,3,12,Full Circle,CardGame,,,,5
+472.2311,5,3,12,Full Circle,Task: 8,,,
+473.5756,5,3,12,Full Circle,SelectedCards,,,
+476.0645,5,3,12,Full Circle,Card,,,0,
+477.6422,5,3,12,Full Circle,Card,,,26,
+480.0311,5,3,12,Full Circle,Card,,,23,
+481.4978,5,3,12,Full Circle,Card,,,35,
+486.1978,5,3,12,Full Circle,Card,,,6,
+488.6089,5,3,12,Full Circle,Result,,,
+491.6422,6,4,12,Flat,Prepare,,,
+493.6645,6,4,12,Flat,ShowPattern,,,
+493.6756,6,4,12,Flat,Card,6,,,
+494.7978,6,4,12,Flat,Card,26,,,
+494.82,6,4,12,Flat,Card,1,,,
+497.5645,6,4,12,Flat,Card,,1,,
+501.0533,6,4,12,Flat,Card,,26,,
+504.6089,6,4,12,Flat,Card,,6,,
+505.0978,6,4,12,Flat,Card,21,,,
+505.1867,6,4,12,Flat,Card,35,,,
+506.5978,6,4,12,Flat,Card,,21,,
+508.5756,6,4,12,Flat,Card,,35,,
+508.62,6,4,12,Flat,Distractor,,,
+510.6645,6,4,12,Flat,Task: 7,,,
+510.7978,6,4,12,Flat,CardGame,,,,4
+510.7978,6,4,12,Flat,Task: 2,,,
+512.9645,6,4,12,Flat,CardGame,,,,2
+512.9645,6,4,12,Flat,Task: 4,,,
+515.7422,6,4,12,Flat,CardGame,,,,4
+515.7422,6,4,12,Flat,Task: 7,,,
+517.5311,6,4,12,Flat,CardGame,,,,7
+517.5311,6,4,12,Flat,Task: 1,,,
+519.2089,6,4,12,Flat,CardGame,,,,1
+519.2089,6,4,12,Flat,Task: 4,,,
+520.7756,6,4,12,Flat,CardGame,,,,4
+520.7756,6,4,12,Flat,Task: 7,,,
+522.5422,6,4,12,Flat,CardGame,,,,7
+522.5422,6,4,12,Flat,Task: 6,,,
+525.0089,6,4,12,Flat,CardGame,,,,6
+525.0089,6,4,12,Flat,Task: 6,,,
+526.8311,6,4,12,Flat,CardGame,,,,6
+526.8311,6,4,12,Flat,Task: 3,,,
+528.7089,6,4,12,Flat,CardGame,,,,3
+528.7089,6,4,12,Flat,Task: 5,,,
+529.6089,6,4,12,Flat,SelectedCards,,,
+534.3978,6,4,12,Flat,Card,,,25,
+535.4089,6,4,12,Flat,Card,,,26,
+539.2756,6,4,12,Flat,Card,,,18,
+543.7867,6,4,12,Flat,Card,,,21,
+545.0645,6,4,12,Flat,Card,,,35,
+548.3755,6,4,12,Flat,Result,,,
+553.1756,7,5,12,Full Circle,Prepare,,,
+554.6867,7,5,12,Full Circle,ShowPattern,,,
+555.2867,7,5,12,Full Circle,Card,1,,,
+556.7756,7,5,12,Full Circle,Card,26,,,
+557.1756,7,5,12,Full Circle,Card,23,,,
+558.0089,7,5,12,Full Circle,Card,,23,,
+560.6089,7,5,12,Full Circle,Card,,1,,
+561.6756,7,5,12,Full Circle,Card,28,,,
+562.8644,7,5,12,Full Circle,Card,,26,,
+565.1756,7,5,12,Full Circle,Card,,28,,
+566.3755,7,5,12,Full Circle,Card,21,,,
+567.7089,7,5,12,Full Circle,Card,,21,,
+569.6422,7,5,12,Full Circle,Distractor,,,
+569.6422,7,5,12,Full Circle,Task: 7,,,
+569.6533,7,5,12,Full Circle,CardGame,,,,1
+569.6533,7,5,12,Full Circle,Task: 8,,,
+572.52,7,5,12,Full Circle,CardGame,,,,8
+572.52,7,5,12,Full Circle,Task: 4,,,
+575.3311,7,5,12,Full Circle,CardGame,,,,4
+575.3311,7,5,12,Full Circle,Task: 5,,,
+577.5978,7,5,12,Full Circle,CardGame,,,,5
+577.5978,7,5,12,Full Circle,Task: 2,,,
+579.1089,7,5,12,Full Circle,CardGame,,,,2
+579.1089,7,5,12,Full Circle,Task: 1,,,
+580.7867,7,5,12,Full Circle,CardGame,,,,1
+580.7867,7,5,12,Full Circle,Task: 8,,,
+581.8867,7,5,12,Full Circle,CardGame,,,,8
+581.8867,7,5,12,Full Circle,Task: 1,,,
+583.7089,7,5,12,Full Circle,CardGame,,,,1
+583.7089,7,5,12,Full Circle,Task: 6,,,
+585.82,7,5,12,Full Circle,CardGame,,,,6
+585.82,7,5,12,Full Circle,Task: 3,,,
+587.2867,7,5,12,Full Circle,CardGame,,,,3
+587.2867,7,5,12,Full Circle,Task: 7,,,
+588.5978,7,5,12,Full Circle,SelectedCards,,,
+592.9534,7,5,12,Full Circle,Card,,,1,
+594.1311,7,5,12,Full Circle,Card,,,23,
+597.2311,7,5,12,Full Circle,Card,,,15,
+599.52,7,5,12,Full Circle,Card,,,20,
+604.0089,7,5,12,Full Circle,Card,,,18,
+605.0533,7,5,12,Full Circle,Result,,,
+606.7756,8,6,12,Flat,Prepare,,,
+608.7756,8,6,12,Flat,ShowPattern,,,
+609.7534,8,6,12,Flat,Card,15,,,
+609.8422,8,6,12,Flat,Card,1,,,
+612.7756,8,6,12,Flat,Card,,1,,
+615.6533,8,6,12,Flat,Card,,15,,
+616.4312,8,6,12,Flat,Card,29,,,
+616.5645,8,6,12,Flat,Card,19,,,
+616.6978,8,6,12,Flat,Card,35,,,
+618.9423,8,6,12,Flat,Card,,29,,
+620.9089,8,6,12,Flat,Card,,19,,
+623.8533,8,6,12,Flat,Card,,35,,
+623.8533,8,6,12,Flat,Distractor,,,
+625.5311,8,6,12,Flat,Task: 6,,,
+625.5756,8,6,12,Flat,CardGame,,,,9
+625.5756,8,6,12,Flat,Task: 4,,,
+628.32,8,6,12,Flat,CardGame,,,,4
+628.32,8,6,12,Flat,Task: 8,,,
+629.8644,8,6,12,Flat,CardGame,,,,8
+629.8644,8,6,12,Flat,Task: 2,,,
+631.7534,8,6,12,Flat,CardGame,,,,2
+631.7534,8,6,12,Flat,Task: 3,,,
+634.1978,8,6,12,Flat,CardGame,,,,3
+634.1978,8,6,12,Flat,Task: 2,,,
+635.4645,8,6,12,Flat,CardGame,,,,2
+635.4645,8,6,12,Flat,Task: 2,,,
+636.8533,8,6,12,Flat,CardGame,,,,2
+636.8533,8,6,12,Flat,Task: 7,,,
+638.12,8,6,12,Flat,CardGame,,,,7
+638.12,8,6,12,Flat,Task: 1,,,
+639.4534,8,6,12,Flat,CardGame,,,,1
+639.4534,8,6,12,Flat,Task: 3,,,
+642.3311,8,6,12,Flat,CardGame,,,,3
+642.3311,8,6,12,Flat,Task: 3,,,
+644.4756,8,6,12,Flat,SelectedCards,,,
+647.5867,8,6,12,Flat,Card,,,1,
+649.7867,8,6,12,Flat,Card,,,26,
+652.0422,8,6,12,Flat,Card,,,16,
+655.2756,8,6,12,Flat,Card,,,35,
+656.2089,8,6,12,Flat,Card,,,20,
+657.7311,8,6,12,Flat,Result,,,
+958.82,9,7,12,Full Circle,Prepare,,,
+962.4645,9,7,12,Full Circle,ShowPattern,,,
+963.4423,9,7,12,Full Circle,Card,0,,,
+965.1423,9,7,12,Full Circle,Card,,0,,
+965.8311,9,7,12,Full Circle,Card,14,,,
+967.02,9,7,12,Full Circle,Card,,14,,
+967.9756,9,7,12,Full Circle,Card,29,,,
+969.1534,9,7,12,Full Circle,Card,,29,,
+970.1312,9,7,12,Full Circle,Card,9,,,
+970.4089,9,7,12,Full Circle,Card,34,,,
+972.12,9,7,12,Full Circle,Card,,9,,
+973.3644,9,7,12,Full Circle,Card,,34,,
+977.42,9,7,12,Full Circle,Distractor,,,
+977.42,9,7,12,Full Circle,Task: 3,,,
+980.1312,9,7,12,Full Circle,CardGame,,,,3
+980.1312,9,7,12,Full Circle,Task: 4,,,
+982.0311,9,7,12,Full Circle,CardGame,,,,4
+982.0311,9,7,12,Full Circle,Task: 6,,,
+985.4312,9,7,12,Full Circle,CardGame,,,,6
+985.4312,9,7,12,Full Circle,Task: 2,,,
+989.42,9,7,12,Full Circle,CardGame,,,,2
+989.42,9,7,12,Full Circle,Task: 8,,,
+992.1756,9,7,12,Full Circle,CardGame,,,,8
+992.1756,9,7,12,Full Circle,Task: 1,,,
+992.3755,9,7,12,Full Circle,SelectedCards,,,
+994.5089,9,7,12,Full Circle,Card,,,0,
+997.2534,9,7,12,Full Circle,Card,,,14,
+1001.231,9,7,12,Full Circle,Card,,,32,
+1012.064,9,7,12,Full Circle,Card,,,29,
+1019.031,9,7,12,Full Circle,Card,,,22,
+1020.809,9,7,12,Full Circle,Result,,,
+1022.698,10,8,12,Flat,Prepare,,,
+1024.853,10,8,12,Flat,ShowPattern,,,
+1025.887,10,8,12,Flat,Card,0,,,
+1025.887,10,8,12,Flat,Card,25,,,
+1029.342,10,8,12,Flat,Card,,0,,
+1031.609,10,8,12,Flat,Card,,25,,
+1032.72,10,8,12,Flat,Card,29,,,
+1033.053,10,8,12,Flat,Card,20,,,
+1033.198,10,8,12,Flat,Card,10,,,
+1035.265,10,8,12,Flat,Card,,29,,
+1037.164,10,8,12,Flat,Card,,20,,
+1039.453,10,8,12,Flat,Card,,10,,
+1039.82,10,8,12,Flat,Distractor,,,
+1041.62,10,8,12,Flat,Task: 4,,,
+1043.887,10,8,12,Flat,CardGame,,,,4
+1043.887,10,8,12,Flat,Task: 6,,,
+1047.231,10,8,12,Flat,CardGame,,,,6
+1047.231,10,8,12,Flat,Task: 6,,,
+1048.842,10,8,12,Flat,CardGame,,,,6
+1048.842,10,8,12,Flat,Task: 2,,,
+1051.164,10,8,12,Flat,CardGame,,,,2
+1051.164,10,8,12,Flat,Task: 5,,,
+1052.898,10,8,12,Flat,CardGame,,,,5
+1052.898,10,8,12,Flat,Task: 8,,,
+1054.831,10,8,12,Flat,CardGame,,,,8
+1054.831,10,8,12,Flat,Task: 7,,,
+1056.265,10,8,12,Flat,CardGame,,,,7
+1056.265,10,8,12,Flat,Task: 5,,,
+1056.564,10,8,12,Flat,SelectedCards,,,
+1060.898,10,8,12,Flat,Card,,,0,
+1062.309,10,8,12,Flat,Card,,,25,
+1067.909,10,8,12,Flat,Card,,,10,
+1071.598,10,8,12,Flat,Card,,,29,
+1073.731,10,8,12,Flat,Card,,,20,
+1074.942,10,8,12,Flat,Result,,,
+1076.32,11,9,12,Full Circle,Prepare,,,
+1078.453,11,9,12,Full Circle,ShowPattern,,,
+1079.409,11,9,12,Full Circle,Card,13,,,
+1082.265,11,9,12,Full Circle,Card,,13,,
+1082.731,11,9,12,Full Circle,Card,4,,,
+1084.109,11,9,12,Full Circle,Card,,4,,
+1085.309,11,9,12,Full Circle,Card,6,,,
+1087.053,11,9,12,Full Circle,Card,,6,,
+1087.942,11,9,12,Full Circle,Card,21,,,
+1089.942,11,9,12,Full Circle,Card,,21,,
+1090.609,11,9,12,Full Circle,Card,35,,,
+1091.709,11,9,12,Full Circle,Card,,35,,
+1093.42,11,9,12,Full Circle,Distractor,,,
+1093.42,11,9,12,Full Circle,Task: 2,,,
+1095.765,11,9,12,Full Circle,CardGame,,,,2
+1095.765,11,9,12,Full Circle,Task: 6,,,
+1098.587,11,9,12,Full Circle,CardGame,,,,6
+1098.587,11,9,12,Full Circle,Task: 2,,,
+1099.82,11,9,12,Full Circle,CardGame,,,,2
+1099.82,11,9,12,Full Circle,Task: 3,,,
+1101.909,11,9,12,Full Circle,CardGame,,,,3
+1101.909,11,9,12,Full Circle,Task: 2,,,
+1105.02,11,9,12,Full Circle,CardGame,,,,2
+1105.02,11,9,12,Full Circle,Task: 2,,,
+1107.531,11,9,12,Full Circle,CardGame,,,,2
+1107.531,11,9,12,Full Circle,Task: 1,,,
+1108.365,11,9,12,Full Circle,SelectedCards,,,
+1118.353,11,9,12,Full Circle,Card,,,13,
+1128.276,11,9,12,Full Circle,Card,,,5,
+1132.142,11,9,12,Full Circle,Card,,,7,
+1146.576,11,9,12,Full Circle,Card,,,35,
+1154.831,11,9,12,Full Circle,Card,,,21,
+1156.176,11,9,12,Full Circle,Result,,,
+1157.942,12,10,12,Flat,Prepare,,,
+1160.22,12,10,12,Flat,ShowPattern,,,
+1160.231,12,10,12,Flat,Card,6,,,
+1161.587,12,10,12,Flat,Card,12,,,
+1164.12,12,10,12,Flat,Card,,12,,
+1165.664,12,10,12,Flat,Card,29,,,
+1168.064,12,10,12,Flat,Card,,29,,
+1169.453,12,10,12,Flat,Card,,6,,
+1170.976,12,10,12,Flat,Card,33,,,
+1170.987,12,10,12,Flat,Card,10,,,
+1172.931,12,10,12,Flat,Card,,33,,
+1174.342,12,10,12,Flat,Card,,10,,
+1175.176,12,10,12,Flat,Distractor,,,
+1176.676,12,10,12,Flat,Task: 6,,,
+1178.998,12,10,12,Flat,CardGame,,,,6
+1178.998,12,10,12,Flat,Task: 3,,,
+1182.442,12,10,12,Flat,CardGame,,,,3
+1182.442,12,10,12,Flat,Task: 8,,,
+1185.131,12,10,12,Flat,CardGame,,,,8
+1185.131,12,10,12,Flat,Task: 4,,,
+1187.887,12,10,12,Flat,CardGame,,,,4
+1187.887,12,10,12,Flat,Task: 8,,,
+1191.32,12,10,12,Flat,CardGame,,,,8
+1191.32,12,10,12,Flat,Task: 2,,,
+1191.631,12,10,12,Flat,SelectedCards,,,
+1198.142,12,10,12,Flat,Card,,,12,
+1203.076,12,10,12,Flat,Card,,,29,
+1203.964,12,10,12,Flat,Card,,,6,
+1207.82,12,10,12,Flat,Card,,,10,
+1216.476,12,10,12,Flat,Card,,,32,
+1217.709,12,10,12,Flat,Result,,,
+1219.931,13,11,12,Full Circle,Prepare,,,
+1221.376,13,11,12,Full Circle,ShowPattern,,,
+1222.909,13,11,12,Full Circle,Card,24,,,
+1224.776,13,11,12,Full Circle,Card,,24,,
+1226.231,13,11,12,Full Circle,Card,28,,,
+1227.464,13,11,12,Full Circle,Card,,28,,
+1228.098,13,11,12,Full Circle,Card,18,,,
+1229.598,13,11,12,Full Circle,Card,,18,,
+1230.22,13,11,12,Full Circle,Card,8,,,
+1231.453,13,11,12,Full Circle,Card,,8,,
+1232.72,13,11,12,Full Circle,Card,10,,,
+1234.498,13,11,12,Full Circle,Card,,10,,
+1236.342,13,11,12,Full Circle,Distractor,,,
+1236.342,13,11,12,Full Circle,Task: 6,,,
+1239.476,13,11,12,Full Circle,CardGame,,,,6
+1239.476,13,11,12,Full Circle,Task: 1,,,
+1241.598,13,11,12,Full Circle,CardGame,,,,1
+1241.598,13,11,12,Full Circle,Task: 3,,,
+1244.431,13,11,12,Full Circle,CardGame,,,,3
+1244.431,13,11,12,Full Circle,Task: 5,,,
+1246.82,13,11,12,Full Circle,CardGame,,,,5
+1246.82,13,11,12,Full Circle,Task: 4,,,
+1249.331,13,11,12,Full Circle,CardGame,,,,4
+1249.331,13,11,12,Full Circle,Task: 2,,,
+1251.287,13,11,12,Full Circle,SelectedCards,,,
+1257.831,13,11,12,Full Circle,Card,,,27,
+1262.464,13,11,12,Full Circle,Card,,,23,
+1269.887,13,11,12,Full Circle,Card,,,8,
+1296.064,13,11,12,Full Circle,Card,,,12,
+1305.798,13,11,12,Full Circle,Card,,,6,
+1306.809,13,11,12,Full Circle,Result,,,
+1308.531,14,12,12,Flat,Prepare,,,
+1309.531,14,12,12,Flat,ShowPattern,,,
+1310.153,14,12,12,Flat,Card,4,,,
+1310.331,14,12,12,Flat,Card,14,,,
+1313.32,14,12,12,Flat,Card,,14,,
+1316.142,14,12,12,Flat,Card,,4,,
+1318.009,14,12,12,Flat,Card,7,,,
+1318.287,14,12,12,Flat,Card,21,,,
+1318.453,14,12,12,Flat,Card,35,,,
+1321.042,14,12,12,Flat,Card,,7,,
+1324.064,14,12,12,Flat,Card,,21,,
+1325.72,14,12,12,Flat,Card,,35,,
+1325.72,14,12,12,Flat,Distractor,,,
+1327.653,14,12,12,Flat,Task: 6,,,
+1331.12,14,12,12,Flat,CardGame,,,,6
+1331.12,14,12,12,Flat,Task: 3,,,
+1333.187,14,12,12,Flat,CardGame,,,,3
+1333.187,14,12,12,Flat,Task: 3,,,
+1335.064,14,12,12,Flat,CardGame,,,,3
+1335.064,14,12,12,Flat,Task: 1,,,
+1336.809,14,12,12,Flat,CardGame,,,,1
+1336.809,14,12,12,Flat,Task: 3,,,
+1338.553,14,12,12,Flat,CardGame,,,,3
+1338.553,14,12,12,Flat,Task: 1,,,
+1341.331,14,12,12,Flat,CardGame,,,,1
+1341.331,14,12,12,Flat,Task: 3,,,
+1342.609,14,12,12,Flat,SelectedCards,,,
+1347.631,14,12,12,Flat,Card,,,14,
+1354.353,14,12,12,Flat,Card,,,20,
+1361.109,14,12,12,Flat,Card,,,4,
+1369.453,14,12,12,Flat,Card,,,35,
+1397.253,14,12,12,Flat,Card,,,6,
+1399.509,14,12,12,Flat,Result,,,
+1649.331,15,13,12,Full Circle,Prepare,,,
+1651.964,15,13,12,Full Circle,ShowPattern,,,
+1651.987,15,13,12,Full Circle,Card,15,,,
+1653.887,15,13,12,Full Circle,Card,24,,,
+1656.153,15,13,12,Full Circle,Card,,24,,
+1658.253,15,13,12,Full Circle,Card,,15,,
+1660.32,15,13,12,Full Circle,Card,5,,,
+1661.431,15,13,12,Full Circle,Card,,5,,
+1662.62,15,13,12,Full Circle,Card,33,,,
+1663.709,15,13,12,Full Circle,Card,,33,,
+1664.209,15,13,12,Full Circle,Card,10,,,
+1665.731,15,13,12,Full Circle,Card,,10,,
+1666.931,15,13,12,Full Circle,Distractor,,,
+1666.931,15,13,12,Full Circle,Task: 3,,,
+1669.087,15,13,12,Full Circle,CardGame,,,,3
+1669.087,15,13,12,Full Circle,Task: 6,,,
+1671.542,15,13,12,Full Circle,CardGame,,,,6
+1671.542,15,13,12,Full Circle,Task: 8,,,
+1674.231,15,13,12,Full Circle,CardGame,,,,8
+1674.231,15,13,12,Full Circle,Task: 6,,,
+1676.164,15,13,12,Full Circle,CardGame,,,,6
+1676.164,15,13,12,Full Circle,Task: 5,,,
+1678.564,15,13,12,Full Circle,CardGame,,,,5
+1678.564,15,13,12,Full Circle,Task: 3,,,
+1680.12,15,13,12,Full Circle,CardGame,,,,3
+1680.12,15,13,12,Full Circle,Task: 3,,,
+1681.542,15,13,12,Full Circle,CardGame,,,,3
+1681.542,15,13,12,Full Circle,Task: 2,,,
+1681.876,15,13,12,Full Circle,SelectedCards,,,
+1698.964,15,13,12,Full Circle,Card,,,15,
+1702.198,15,13,12,Full Circle,Card,,,17,
+1705.02,15,13,12,Full Circle,Card,,,10,
+1711.353,15,13,12,Full Circle,Card,,,8,
+1715.742,15,13,12,Full Circle,Card,,,12,
+1716.909,15,13,12,Full Circle,Result,,,
+1717.931,16,14,12,Flat,Prepare,,,
+1720.242,16,14,12,Flat,ShowPattern,,,
+1721.12,16,14,12,Flat,Card,15,,,
+1721.231,16,14,12,Flat,Card,0,,,
+1724.587,16,14,12,Flat,Card,,0,,
+1726.131,16,14,12,Flat,Card,,15,,
+1726.342,16,14,12,Flat,Card,29,,,
+1726.576,16,14,12,Flat,Card,9,,,
+1726.62,16,14,12,Flat,Card,34,,,
+1728.464,16,14,12,Flat,Card,,29,,
+1732.687,16,14,12,Flat,Card,,9,,
+1734.698,16,14,12,Flat,Card,,34,,
+1735.198,16,14,12,Flat,Distractor,,,
+1736.476,16,14,12,Flat,Task: 6,,,
+1738.953,16,14,12,Flat,CardGame,,,,6
+1738.953,16,14,12,Flat,Task: 7,,,
+1740.498,16,14,12,Flat,CardGame,,,,7
+1740.498,16,14,12,Flat,Task: 6,,,
+1742.031,16,14,12,Flat,CardGame,,,,6
+1742.031,16,14,12,Flat,Task: 5,,,
+1743.542,16,14,12,Flat,CardGame,,,,5
+1743.542,16,14,12,Flat,Task: 1,,,
+1745.32,16,14,12,Flat,CardGame,,,,1
+1745.32,16,14,12,Flat,Task: 1,,,
+1747.831,16,14,12,Flat,CardGame,,,,1
+1747.831,16,14,12,Flat,Task: 4,,,
+1749.042,16,14,12,Flat,CardGame,,,,4
+1749.042,16,14,12,Flat,Task: 4,,,
+1750.398,16,14,12,Flat,CardGame,,,,4
+1750.398,16,14,12,Flat,Task: 6,,,
+1751.42,16,14,12,Flat,SelectedCards,,,
+1764.253,16,14,12,Flat,Card,,,0,
+1776.798,16,14,12,Flat,Card,,,16,
+1777.498,16,14,12,Flat,Card,,,14,
+1783.676,16,14,12,Flat,Card,,,8,
+1788.153,16,14,12,Flat,Card,,,22,
+1789.387,16,14,12,Flat,Result,,,
+1791.042,17,15,12,Full Circle,Prepare,,,
+1792.387,17,15,12,Full Circle,ShowPattern,,,
+1793.22,17,15,12,Full Circle,Card,14,,,
+1795.076,17,15,12,Full Circle,Card,,14,,
+1795.209,17,15,12,Full Circle,Card,11,,,
+1798.031,17,15,12,Full Circle,Card,,11,,
+1799.031,17,15,12,Full Circle,Card,28,,,
+1800.398,17,15,12,Full Circle,Card,,28,,
+1801.709,17,15,12,Full Circle,Card,31,,,
+1803.587,17,15,12,Full Circle,Card,,31,,
+1804.187,17,15,12,Full Circle,Card,21,,,
+1805.276,17,15,12,Full Circle,Card,,21,,
+1807.331,17,15,12,Full Circle,Distractor,,,
+1807.331,17,15,12,Full Circle,Task: 3,,,
+1810.642,17,15,12,Full Circle,CardGame,,,,3
+1810.642,17,15,12,Full Circle,Task: 4,,,
+1813.342,17,15,12,Full Circle,CardGame,,,,4
+1813.342,17,15,12,Full Circle,Task: 2,,,
+1814.931,17,15,12,Full Circle,CardGame,,,,2
+1814.931,17,15,12,Full Circle,Task: 7,,,
+1817.331,17,15,12,Full Circle,CardGame,,,,7
+1817.331,17,15,12,Full Circle,Task: 8,,,
+1819.287,17,15,12,Full Circle,CardGame,,,,8
+1819.287,17,15,12,Full Circle,Task: 8,,,
+1821.265,17,15,12,Full Circle,CardGame,,,,8
+1821.265,17,15,12,Full Circle,Task: 7,,,
+1822.287,17,15,12,Full Circle,SelectedCards,,,
+1826.087,17,15,12,Full Circle,Card,,,27,
+1827.231,17,15,12,Full Circle,Card,,,29,
+1832.198,17,15,12,Full Circle,Card,,,23,
+1856.298,17,15,12,Full Circle,Card,,,19,
+1862.564,17,15,12,Full Circle,Card,,,8,
+1863.731,17,15,12,Full Circle,Result,,,
+1865.42,18,16,12,Flat,Prepare,,,
+1866.664,18,16,12,Flat,ShowPattern,,,
+1867.309,18,16,12,Flat,Card,4,,,
+1867.576,18,16,12,Flat,Card,0,,,
+1870.709,18,16,12,Flat,Card,,0,,
+1872.042,18,16,12,Flat,Card,18,,,
+1872.287,18,16,12,Flat,Card,32,,,
+1872.42,18,16,12,Flat,Card,34,,,
+1874.387,18,16,12,Flat,Card,,4,,
+1877.476,18,16,12,Flat,Card,,18,,
+1879.376,18,16,12,Flat,Card,,32,,
+1880.687,18,16,12,Flat,Card,,34,,
+1881.62,18,16,12,Flat,Distractor,,,
+1882.865,18,16,12,Flat,Task: 2,,,
+1885.676,18,16,12,Flat,CardGame,,,,2
+1885.676,18,16,12,Flat,Task: 7,,,
+1888.242,18,16,12,Flat,CardGame,,,,7
+1888.242,18,16,12,Flat,Task: 3,,,
+1890.709,18,16,12,Flat,CardGame,,,,3
+1890.709,18,16,12,Flat,Task: 6,,,
+1892.309,18,16,12,Flat,CardGame,,,,6
+1892.309,18,16,12,Flat,Task: 6,,,
+1894.62,18,16,12,Flat,CardGame,,,,6
+1894.62,18,16,12,Flat,Task: 4,,,
+1897.02,18,16,12,Flat,CardGame,,,,4
+1897.02,18,16,12,Flat,Task: 3,,,
+1897.82,18,16,12,Flat,SelectedCards,,,
+1902.564,18,16,12,Flat,Card,,,32,
+1903.242,18,16,12,Flat,Card,,,34,
+1907.898,18,16,12,Flat,Card,,,0,
+1911.753,18,16,12,Flat,Card,,,18,
+1924.998,18,16,12,Flat,Card,,,4,
+1925.887,18,16,12,Flat,Result,,,
+1927.253,19,17,12,Full Circle,Prepare,,,
+1928.276,19,17,12,Full Circle,ShowPattern,,,
+1929.342,19,17,12,Full Circle,Card,12,,,
+1931.753,19,17,12,Full Circle,Card,,12,,
+1932.709,19,17,12,Full Circle,Card,5,,,
+1934.476,19,17,12,Full Circle,Card,,5,,
+1935.131,19,17,12,Full Circle,Card,30,,,
+1936.853,19,17,12,Full Circle,Card,,30,,
+1938.665,19,17,12,Full Circle,Card,9,,,
+1940.676,19,17,12,Full Circle,Card,,9,,
+1941.131,19,17,12,Full Circle,Card,34,,,
+1942.064,19,17,12,Full Circle,Card,,34,,
+1943.231,19,17,12,Full Circle,Distractor,,,
+1943.231,19,17,12,Full Circle,Task: 6,,,
+1947.231,19,17,12,Full Circle,Task: 6,,,
+1949.042,19,17,12,Full Circle,CardGame,,,,6
+1949.042,19,17,12,Full Circle,Task: 2,,,
+1951.464,19,17,12,Full Circle,CardGame,,,,2
+1951.464,19,17,12,Full Circle,Task: 4,,,
+1954.176,19,17,12,Full Circle,CardGame,,,,4
+1954.176,19,17,12,Full Circle,Task: 2,,,
+1956.398,19,17,12,Full Circle,CardGame,,,,2
+1956.398,19,17,12,Full Circle,Task: 1,,,
+1957.642,19,17,12,Full Circle,CardGame,,,,1
+1957.642,19,17,12,Full Circle,Task: 7,,,
+1959.698,19,17,12,Full Circle,CardGame,,,,7
+1959.698,19,17,12,Full Circle,Task: 7,,,
+1961.564,19,17,12,Full Circle,CardGame,,,,7
+1961.564,19,17,12,Full Circle,Task: 1,,,
+1962.176,19,17,12,Full Circle,SelectedCards,,,
+1967.653,19,17,12,Full Circle,Card,,,23,
+1973.976,19,17,12,Full Circle,Card,,,29,
+1982.109,19,17,12,Full Circle,Card,,,34,
+1995.453,19,17,12,Full Circle,Card,,,5,
+1997.342,19,17,12,Full Circle,Card,,,30,
+1998.953,19,17,12,Full Circle,Result,,,
+2000.409,20,18,12,Flat,Prepare,,,
+2001.942,20,18,12,Flat,ShowPattern,,,
+2002.831,20,18,12,Flat,Card,13,,,
+2005.62,20,18,12,Flat,Card,,13,,
+2006.231,20,18,12,Flat,Card,28,,,
+2006.376,20,18,12,Flat,Card,30,,,
+2009.52,20,18,12,Flat,Card,,28,,
+2012.453,20,18,12,Flat,Card,,30,,
+2013.231,20,18,12,Flat,Card,21,,,
+2013.331,20,18,12,Flat,Card,11,,,
+2014.82,20,18,12,Flat,Card,,21,,
+2015.598,20,18,12,Flat,Card,,11,,
+2016.909,20,18,12,Flat,Distractor,,,
+2017.72,20,18,12,Flat,Task: 1,,,
+2019.709,20,18,12,Flat,CardGame,,,,1
+2019.709,20,18,12,Flat,Task: 2,,,
+2021.22,20,18,12,Flat,CardGame,,,,2
+2021.22,20,18,12,Flat,Task: 4,,,
+2022.32,20,18,12,Flat,CardGame,,,,4
+2022.32,20,18,12,Flat,Task: 8,,,
+2024.487,20,18,12,Flat,CardGame,,,,8
+2024.487,20,18,12,Flat,Task: 3,,,
+2027.242,20,18,12,Flat,CardGame,,,,3
+2027.242,20,18,12,Flat,Task: 6,,,
+2029.876,20,18,12,Flat,CardGame,,,,6
+2029.876,20,18,12,Flat,Task: 6,,,
+2032.553,20,18,12,Flat,CardGame,,,,6
+2032.553,20,18,12,Flat,Task: 1,,,
+2032.665,20,18,12,Flat,SelectedCards,,,
+2037.631,20,18,12,Flat,Card,,,12,
+2045.153,20,18,12,Flat,Card,,,29,
+2069.831,20,18,12,Flat,Card,,,27,
+2077.542,20,18,12,Flat,Card,,,34,
+2080.365,20,18,12,Flat,Card,,,19,
+2081.764,20,18,12,Flat,Result,,,
