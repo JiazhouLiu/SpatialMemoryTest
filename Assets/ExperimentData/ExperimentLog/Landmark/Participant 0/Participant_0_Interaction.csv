@@ -1,1 +1,595 @@
 TimeSinceStart,TrialNo,TrialID,ParticipantID,Layout,Info,CardSeen,CardSelected,CardAnswered,CardPlayed
+0,1,Training,0,Full Circle,Prepare,,,
+1.853293,1,Training,0,Full Circle,ShowPattern,,,
+1.95329,1,Training,0,Full Circle,Card,15,,,
+58.80758,1,Training,0,Full Circle,Card,6,,,
+66.12965,1,Training,0,Full Circle,Card,,6,,
+67.85183,1,Training,0,Full Circle,Card,10,,,
+68.29626,1,Training,0,Full Circle,Card,,10,,
+68.92958,1,Training,0,Full Circle,Card,35,,,
+75.25166,1,Training,0,Full Circle,Card,,35,,
+75.99609,1,Training,0,Full Circle,Card,25,,,
+79.6849,1,Training,0,Full Circle,Card,,25,,
+84.19591,1,Training,0,Full Circle,Card,,15,,
+84.19591,1,Training,0,Full Circle,Distractor,,,
+84.19591,1,Training,0,Full Circle,Task: 6,,,
+84.47368,1,Training,0,Full Circle,CardGame,,,,5
+84.47368,1,Training,0,Full Circle,Task: 7,,,
+84.48479,1,Training,0,Full Circle,CardGame,,,,3
+84.48479,1,Training,0,Full Circle,Task: 7,,,
+84.4959,1,Training,0,Full Circle,CardGame,,,,3
+84.4959,1,Training,0,Full Circle,Task: 6,,,
+84.50701,1,Training,0,Full Circle,CardGame,,,,3
+84.50701,1,Training,0,Full Circle,Task: 7,,,
+84.54034,1,Training,0,Full Circle,CardGame,,,,3
+84.54034,1,Training,0,Full Circle,Task: 6,,,
+84.55146,1,Training,0,Full Circle,CardGame,,,,6
+84.55146,1,Training,0,Full Circle,Task: 7,,,
+84.56257,1,Training,0,Full Circle,CardGame,,,,5
+84.56257,1,Training,0,Full Circle,Task: 7,,,
+84.57368,1,Training,0,Full Circle,CardGame,,,,5
+84.57368,1,Training,0,Full Circle,Task: 4,,,
+88.57359,1,Training,0,Full Circle,Task: 1,,,
+92.58461,1,Training,0,Full Circle,Task: 2,,,
+96.58453,1,Training,0,Full Circle,Task: 2,,,
+100.5844,1,Training,0,Full Circle,Task: 6,,,
+104.5955,1,Training,0,Full Circle,Task: 3,,,
+108.6065,1,Training,0,Full Circle,Task: 7,,,
+112.6064,1,Training,0,Full Circle,Task: 1,,,
+116.6174,1,Training,0,Full Circle,Task: 2,,,
+120.6284,1,Training,0,Full Circle,Task: 7,,,
+124.6283,1,Training,0,Full Circle,Task: 4,,,
+128.6394,1,Training,0,Full Circle,Task: 7,,,
+132.6504,1,Training,0,Full Circle,Task: 3,,,
+136.6614,1,Training,0,Full Circle,Task: 3,,,
+140.6724,1,Training,0,Full Circle,Task: 4,,,
+144.6835,1,Training,0,Full Circle,Task: 8,,,
+148.6834,1,Training,0,Full Circle,Task: 5,,,
+152.8833,1,Training,0,Full Circle,Task: 7,,,
+156.6165,1,Training,0,Full Circle,CardGame,,,,7
+156.6165,1,Training,0,Full Circle,Task: 6,,,
+156.6276,1,Training,0,Full Circle,CardGame,,,,4
+156.6276,1,Training,0,Full Circle,Task: 7,,,
+156.6387,1,Training,0,Full Circle,CardGame,,,,2
+156.6387,1,Training,0,Full Circle,Task: 1,,,
+156.6499,1,Training,0,Full Circle,CardGame,,,,5
+156.6499,1,Training,0,Full Circle,Task: 6,,,
+156.661,1,Training,0,Full Circle,CardGame,,,,6
+156.661,1,Training,0,Full Circle,Task: 6,,,
+156.6721,1,Training,0,Full Circle,CardGame,,,,7
+156.6721,1,Training,0,Full Circle,Task: 3,,,
+156.6832,1,Training,0,Full Circle,CardGame,,,,5
+156.6832,1,Training,0,Full Circle,Task: 5,,,
+156.6943,1,Training,0,Full Circle,CardGame,,,,6
+156.6943,1,Training,0,Full Circle,Task: 6,,,
+156.7054,1,Training,0,Full Circle,CardGame,,,,9
+156.7054,1,Training,0,Full Circle,Task: 6,,,
+156.7165,1,Training,0,Full Circle,CardGame,,,,3
+156.7165,1,Training,0,Full Circle,Task: 5,,,
+156.7276,1,Training,0,Full Circle,CardGame,,,,3
+156.7276,1,Training,0,Full Circle,Task: 5,,,
+158.5276,1,Training,0,Full Circle,CardGame,,,,5
+158.5276,1,Training,0,Full Circle,Task: 7,,,
+158.5387,1,Training,0,Full Circle,CardGame,,,,3
+158.5387,1,Training,0,Full Circle,Task: 2,,,
+158.5498,1,Training,0,Full Circle,CardGame,,,,3
+158.5498,1,Training,0,Full Circle,Task: 1,,,
+158.5609,1,Training,0,Full Circle,CardGame,,,,3
+158.5609,1,Training,0,Full Circle,Task: 4,,,
+158.572,1,Training,0,Full Circle,CardGame,,,,3
+158.572,1,Training,0,Full Circle,Task: 8,,,
+158.5831,1,Training,0,Full Circle,CardGame,,,,7
+158.5831,1,Training,0,Full Circle,Task: 7,,,
+158.5943,1,Training,0,Full Circle,CardGame,,,,7
+158.5943,1,Training,0,Full Circle,Task: 4,,,
+158.6054,1,Training,0,Full Circle,CardGame,,,,5
+158.6054,1,Training,0,Full Circle,Task: 7,,,
+158.6165,1,Training,0,Full Circle,CardGame,,,,8
+158.6165,1,Training,0,Full Circle,Task: 3,,,
+158.6276,1,Training,0,Full Circle,CardGame,,,,2
+158.6276,1,Training,0,Full Circle,Task: 4,,,
+158.6387,1,Training,0,Full Circle,CardGame,,,,2
+158.6387,1,Training,0,Full Circle,Task: 6,,,
+159.2276,1,Training,0,Full Circle,CardGame,,,,5
+159.2276,1,Training,0,Full Circle,Task: 2,,,
+159.2387,1,Training,0,Full Circle,CardGame,,,,1
+159.2387,1,Training,0,Full Circle,Task: 6,,,
+159.2609,1,Training,0,Full Circle,CardGame,,,,4
+159.2609,1,Training,0,Full Circle,Task: 4,,,
+159.272,1,Training,0,Full Circle,CardGame,,,,1
+159.272,1,Training,0,Full Circle,Task: 5,,,
+159.2831,1,Training,0,Full Circle,CardGame,,,,1
+159.2831,1,Training,0,Full Circle,Task: 1,,,
+159.2943,1,Training,0,Full Circle,CardGame,,,,3
+159.2943,1,Training,0,Full Circle,Task: 6,,,
+159.3054,1,Training,0,Full Circle,CardGame,,,,8
+159.3054,1,Training,0,Full Circle,Task: 4,,,
+159.3165,1,Training,0,Full Circle,CardGame,,,,3
+159.3165,1,Training,0,Full Circle,Task: 6,,,
+159.3276,1,Training,0,Full Circle,CardGame,,,,1
+159.3276,1,Training,0,Full Circle,Task: 2,,,
+159.3387,1,Training,0,Full Circle,CardGame,,,,8
+159.3387,1,Training,0,Full Circle,Task: 1,,,
+159.3387,1,Training,0,Full Circle,CardGame,,,,8
+159.3387,1,Training,0,Full Circle,Task: 3,,,
+159.3498,1,Training,0,Full Circle,CardGame,,,,2
+159.3498,1,Training,0,Full Circle,Task: 4,,,
+159.3609,1,Training,0,Full Circle,CardGame,,,,7
+159.3609,1,Training,0,Full Circle,Task: 4,,,
+159.372,1,Training,0,Full Circle,CardGame,,,,6
+159.372,1,Training,0,Full Circle,Task: 7,,,
+159.3831,1,Training,0,Full Circle,CardGame,,,,5
+159.3831,1,Training,0,Full Circle,Task: 5,,,
+159.3942,1,Training,0,Full Circle,CardGame,,,,4
+159.3942,1,Training,0,Full Circle,Task: 5,,,
+159.4053,1,Training,0,Full Circle,CardGame,,,,7
+159.4053,1,Training,0,Full Circle,Task: 1,,,
+159.4165,1,Training,0,Full Circle,CardGame,,,,9
+159.4165,1,Training,0,Full Circle,Task: 2,,,
+159.4276,1,Training,0,Full Circle,CardGame,,,,4
+159.4276,1,Training,0,Full Circle,Task: 7,,,
+159.4387,1,Training,0,Full Circle,CardGame,,,,1
+159.4387,1,Training,0,Full Circle,Task: 8,,,
+159.4498,1,Training,0,Full Circle,CardGame,,,,7
+159.4498,1,Training,0,Full Circle,Task: 3,,,
+159.4609,1,Training,0,Full Circle,CardGame,,,,7
+159.4609,1,Training,0,Full Circle,Task: 6,,,
+159.472,1,Training,0,Full Circle,CardGame,,,,6
+159.472,1,Training,0,Full Circle,Task: 2,,,
+159.4831,1,Training,0,Full Circle,CardGame,,,,8
+159.4831,1,Training,0,Full Circle,Task: 7,,,
+159.4942,1,Training,0,Full Circle,CardGame,,,,7
+159.4942,1,Training,0,Full Circle,Task: 7,,,
+159.5054,1,Training,0,Full Circle,CardGame,,,,5
+159.5054,1,Training,0,Full Circle,Task: 6,,,
+159.5165,1,Training,0,Full Circle,CardGame,,,,7
+159.5165,1,Training,0,Full Circle,Task: 6,,,
+159.5276,1,Training,0,Full Circle,CardGame,,,,2
+159.5276,1,Training,0,Full Circle,Task: 4,,,
+159.5387,1,Training,0,Full Circle,CardGame,,,,5
+159.5387,1,Training,0,Full Circle,Task: 8,,,
+159.5498,1,Training,0,Full Circle,CardGame,,,,7
+159.5498,1,Training,0,Full Circle,Task: 7,,,
+159.5609,1,Training,0,Full Circle,CardGame,,,,6
+159.5609,1,Training,0,Full Circle,Task: 6,,,
+159.572,1,Training,0,Full Circle,CardGame,,,,2
+159.572,1,Training,0,Full Circle,Task: 1,,,
+159.5831,1,Training,0,Full Circle,CardGame,,,,9
+159.5831,1,Training,0,Full Circle,Task: 5,,,
+159.5942,1,Training,0,Full Circle,CardGame,,,,8
+159.5942,1,Training,0,Full Circle,Task: 6,,,
+159.6053,1,Training,0,Full Circle,CardGame,,,,8
+159.6053,1,Training,0,Full Circle,Task: 1,,,
+159.6165,1,Training,0,Full Circle,CardGame,,,,1
+159.6165,1,Training,0,Full Circle,Task: 1,,,
+159.6276,1,Training,0,Full Circle,CardGame,,,,3
+159.6276,1,Training,0,Full Circle,Task: 8,,,
+159.6387,1,Training,0,Full Circle,CardGame,,,,9
+159.6387,1,Training,0,Full Circle,Task: 2,,,
+159.6498,1,Training,0,Full Circle,CardGame,,,,3
+159.6498,1,Training,0,Full Circle,Task: 7,,,
+159.6609,1,Training,0,Full Circle,CardGame,,,,5
+159.6609,1,Training,0,Full Circle,Task: 8,,,
+159.672,1,Training,0,Full Circle,CardGame,,,,7
+159.672,1,Training,0,Full Circle,Task: 7,,,
+159.6831,1,Training,0,Full Circle,CardGame,,,,3
+159.6831,1,Training,0,Full Circle,Task: 8,,,
+159.6942,1,Training,0,Full Circle,CardGame,,,,7
+159.6942,1,Training,0,Full Circle,Task: 3,,,
+159.7054,1,Training,0,Full Circle,CardGame,,,,1
+159.7054,1,Training,0,Full Circle,Task: 8,,,
+159.7165,1,Training,0,Full Circle,CardGame,,,,3
+159.7165,1,Training,0,Full Circle,Task: 5,,,
+159.7276,1,Training,0,Full Circle,CardGame,,,,4
+159.7276,1,Training,0,Full Circle,Task: 5,,,
+159.7387,1,Training,0,Full Circle,CardGame,,,,3
+159.7387,1,Training,0,Full Circle,Task: 8,,,
+159.7498,1,Training,0,Full Circle,CardGame,,,,7
+159.7498,1,Training,0,Full Circle,Task: 5,,,
+159.7609,1,Training,0,Full Circle,CardGame,,,,3
+159.7609,1,Training,0,Full Circle,Task: 6,,,
+159.772,1,Training,0,Full Circle,CardGame,,,,6
+159.772,1,Training,0,Full Circle,Task: 1,,,
+159.7831,1,Training,0,Full Circle,CardGame,,,,7
+159.7831,1,Training,0,Full Circle,Task: 7,,,
+159.7942,1,Training,0,Full Circle,CardGame,,,,9
+159.7942,1,Training,0,Full Circle,Task: 3,,,
+159.8053,1,Training,0,Full Circle,CardGame,,,,3
+159.8053,1,Training,0,Full Circle,Task: 5,,,
+159.8165,1,Training,0,Full Circle,CardGame,,,,9
+159.8165,1,Training,0,Full Circle,Task: 5,,,
+159.8276,1,Training,0,Full Circle,CardGame,,,,4
+159.8276,1,Training,0,Full Circle,Task: 6,,,
+159.8387,1,Training,0,Full Circle,CardGame,,,,4
+159.8387,1,Training,0,Full Circle,Task: 8,,,
+159.8498,1,Training,0,Full Circle,CardGame,,,,7
+159.8498,1,Training,0,Full Circle,Task: 6,,,
+159.8609,1,Training,0,Full Circle,CardGame,,,,1
+159.8609,1,Training,0,Full Circle,Task: 6,,,
+159.872,1,Training,0,Full Circle,CardGame,,,,7
+159.872,1,Training,0,Full Circle,Task: 6,,,
+159.8831,1,Training,0,Full Circle,CardGame,,,,7
+159.8831,1,Training,0,Full Circle,Task: 7,,,
+159.8942,1,Training,0,Full Circle,CardGame,,,,1
+159.8942,1,Training,0,Full Circle,Task: 6,,,
+159.9053,1,Training,0,Full Circle,CardGame,,,,8
+159.9053,1,Training,0,Full Circle,Task: 7,,,
+159.9276,1,Training,0,Full Circle,CardGame,,,,9
+159.9276,1,Training,0,Full Circle,Task: 7,,,
+159.9387,1,Training,0,Full Circle,CardGame,,,,9
+159.9387,1,Training,0,Full Circle,Task: 8,,,
+159.9498,1,Training,0,Full Circle,CardGame,,,,6
+159.9498,1,Training,0,Full Circle,Task: 2,,,
+159.9609,1,Training,0,Full Circle,CardGame,,,,4
+159.9609,1,Training,0,Full Circle,Task: 7,,,
+159.972,1,Training,0,Full Circle,CardGame,,,,2
+159.972,1,Training,0,Full Circle,Task: 2,,,
+159.9831,1,Training,0,Full Circle,CardGame,,,,9
+159.9831,1,Training,0,Full Circle,Task: 4,,,
+159.9942,1,Training,0,Full Circle,CardGame,,,,6
+159.9942,1,Training,0,Full Circle,Task: 4,,,
+160.0053,1,Training,0,Full Circle,CardGame,,,,1
+160.0053,1,Training,0,Full Circle,Task: 8,,,
+160.0164,1,Training,0,Full Circle,CardGame,,,,6
+160.0164,1,Training,0,Full Circle,Task: 6,,,
+160.0276,1,Training,0,Full Circle,CardGame,,,,7
+160.0276,1,Training,0,Full Circle,Task: 7,,,
+160.0387,1,Training,0,Full Circle,CardGame,,,,2
+160.0387,1,Training,0,Full Circle,Task: 8,,,
+160.0498,1,Training,0,Full Circle,CardGame,,,,5
+160.0498,1,Training,0,Full Circle,Task: 3,,,
+160.0609,1,Training,0,Full Circle,CardGame,,,,7
+160.0609,1,Training,0,Full Circle,Task: 7,,,
+160.072,1,Training,0,Full Circle,CardGame,,,,6
+160.072,1,Training,0,Full Circle,Task: 6,,,
+160.0831,1,Training,0,Full Circle,CardGame,,,,2
+160.0831,1,Training,0,Full Circle,Task: 2,,,
+160.0942,1,Training,0,Full Circle,CardGame,,,,2
+160.0942,1,Training,0,Full Circle,Task: 3,,,
+160.1053,1,Training,0,Full Circle,CardGame,,,,5
+160.1053,1,Training,0,Full Circle,Task: 3,,,
+160.1165,1,Training,0,Full Circle,CardGame,,,,3
+160.1165,1,Training,0,Full Circle,Task: 3,,,
+160.1276,1,Training,0,Full Circle,CardGame,,,,1
+160.1276,1,Training,0,Full Circle,Task: 1,,,
+160.1387,1,Training,0,Full Circle,CardGame,,,,6
+160.1387,1,Training,0,Full Circle,Task: 5,,,
+160.1498,1,Training,0,Full Circle,CardGame,,,,9
+160.1498,1,Training,0,Full Circle,Task: 5,,,
+160.1609,1,Training,0,Full Circle,CardGame,,,,9
+160.1609,1,Training,0,Full Circle,Task: 3,,,
+160.172,1,Training,0,Full Circle,CardGame,,,,3
+160.172,1,Training,0,Full Circle,Task: 6,,,
+160.1831,1,Training,0,Full Circle,CardGame,,,,8
+160.1831,1,Training,0,Full Circle,Task: 8,,,
+160.1942,1,Training,0,Full Circle,CardGame,,,,3
+160.1942,1,Training,0,Full Circle,Task: 6,,,
+160.2053,1,Training,0,Full Circle,CardGame,,,,8
+160.2053,1,Training,0,Full Circle,Task: 4,,,
+160.2164,1,Training,0,Full Circle,CardGame,,,,8
+160.2164,1,Training,0,Full Circle,Task: 7,,,
+160.2276,1,Training,0,Full Circle,CardGame,,,,3
+160.2276,1,Training,0,Full Circle,Task: 5,,,
+160.2387,1,Training,0,Full Circle,CardGame,,,,2
+160.2387,1,Training,0,Full Circle,Task: 6,,,
+160.2498,1,Training,0,Full Circle,CardGame,,,,6
+160.2498,1,Training,0,Full Circle,Task: 7,,,
+160.2609,1,Training,0,Full Circle,CardGame,,,,3
+160.2609,1,Training,0,Full Circle,Task: 2,,,
+160.2609,1,Training,0,Full Circle,CardGame,,,,3
+160.2609,1,Training,0,Full Circle,Task: 2,,,
+160.272,1,Training,0,Full Circle,CardGame,,,,8
+160.272,1,Training,0,Full Circle,Task: 2,,,
+160.2831,1,Training,0,Full Circle,CardGame,,,,6
+160.2831,1,Training,0,Full Circle,Task: 5,,,
+160.2942,1,Training,0,Full Circle,CardGame,,,,7
+160.2942,1,Training,0,Full Circle,Task: 5,,,
+160.3053,1,Training,0,Full Circle,CardGame,,,,3
+160.3053,1,Training,0,Full Circle,Task: 6,,,
+160.3164,1,Training,0,Full Circle,CardGame,,,,1
+160.3164,1,Training,0,Full Circle,Task: 3,,,
+160.3276,1,Training,0,Full Circle,CardGame,,,,3
+160.3276,1,Training,0,Full Circle,Task: 4,,,
+160.3387,1,Training,0,Full Circle,CardGame,,,,3
+160.3387,1,Training,0,Full Circle,Task: 2,,,
+160.3498,1,Training,0,Full Circle,CardGame,,,,5
+160.3498,1,Training,0,Full Circle,Task: 8,,,
+160.3609,1,Training,0,Full Circle,CardGame,,,,6
+160.3609,1,Training,0,Full Circle,Task: 7,,,
+160.372,1,Training,0,Full Circle,CardGame,,,,8
+160.372,1,Training,0,Full Circle,Task: 3,,,
+160.3831,1,Training,0,Full Circle,CardGame,,,,2
+160.3831,1,Training,0,Full Circle,Task: 8,,,
+160.3942,1,Training,0,Full Circle,CardGame,,,,5
+160.3942,1,Training,0,Full Circle,Task: 2,,,
+160.4053,1,Training,0,Full Circle,CardGame,,,,2
+160.4053,1,Training,0,Full Circle,Task: 1,,,
+160.4164,1,Training,0,Full Circle,CardGame,,,,3
+160.4164,1,Training,0,Full Circle,Task: 1,,,
+160.4276,1,Training,0,Full Circle,CardGame,,,,8
+160.4276,1,Training,0,Full Circle,Task: 4,,,
+160.4387,1,Training,0,Full Circle,CardGame,,,,7
+160.4387,1,Training,0,Full Circle,Task: 4,,,
+160.4498,1,Training,0,Full Circle,CardGame,,,,3
+160.4498,1,Training,0,Full Circle,Task: 3,,,
+160.472,1,Training,0,Full Circle,CardGame,,,,1
+160.472,1,Training,0,Full Circle,Task: 6,,,
+160.4831,1,Training,0,Full Circle,CardGame,,,,6
+160.4831,1,Training,0,Full Circle,Task: 5,,,
+160.4942,1,Training,0,Full Circle,CardGame,,,,1
+160.4942,1,Training,0,Full Circle,Task: 3,,,
+160.5053,1,Training,0,Full Circle,CardGame,,,,1
+160.5053,1,Training,0,Full Circle,Task: 8,,,
+160.5053,1,Training,0,Full Circle,CardGame,,,,1
+160.5053,1,Training,0,Full Circle,Task: 5,,,
+160.5164,1,Training,0,Full Circle,CardGame,,,,9
+160.5164,1,Training,0,Full Circle,Task: 7,,,
+160.5275,1,Training,0,Full Circle,CardGame,,,,7
+160.5275,1,Training,0,Full Circle,Task: 1,,,
+160.5387,1,Training,0,Full Circle,CardGame,,,,7
+160.5387,1,Training,0,Full Circle,Task: 5,,,
+160.5498,1,Training,0,Full Circle,CardGame,,,,8
+160.5498,1,Training,0,Full Circle,Task: 5,,,
+160.5609,1,Training,0,Full Circle,CardGame,,,,9
+160.5609,1,Training,0,Full Circle,Task: 4,,,
+160.572,1,Training,0,Full Circle,CardGame,,,,6
+160.572,1,Training,0,Full Circle,Task: 3,,,
+160.5831,1,Training,0,Full Circle,CardGame,,,,7
+160.5831,1,Training,0,Full Circle,Task: 4,,,
+160.5942,1,Training,0,Full Circle,CardGame,,,,7
+160.5942,1,Training,0,Full Circle,Task: 5,,,
+160.6053,1,Training,0,Full Circle,CardGame,,,,4
+160.6053,1,Training,0,Full Circle,Task: 8,,,
+160.6164,1,Training,0,Full Circle,CardGame,,,,9
+160.6164,1,Training,0,Full Circle,Task: 1,,,
+160.6275,1,Training,0,Full Circle,CardGame,,,,6
+160.6275,1,Training,0,Full Circle,Task: 2,,,
+160.6387,1,Training,0,Full Circle,CardGame,,,,4
+160.6387,1,Training,0,Full Circle,Task: 5,,,
+160.6498,1,Training,0,Full Circle,CardGame,,,,4
+160.6498,1,Training,0,Full Circle,Task: 3,,,
+160.6609,1,Training,0,Full Circle,CardGame,,,,6
+160.6609,1,Training,0,Full Circle,Task: 4,,,
+160.672,1,Training,0,Full Circle,CardGame,,,,9
+160.672,1,Training,0,Full Circle,Task: 4,,,
+160.6831,1,Training,0,Full Circle,CardGame,,,,3
+160.6831,1,Training,0,Full Circle,Task: 7,,,
+160.6942,1,Training,0,Full Circle,CardGame,,,,7
+160.6942,1,Training,0,Full Circle,Task: 8,,,
+160.7053,1,Training,0,Full Circle,CardGame,,,,3
+160.7053,1,Training,0,Full Circle,Task: 1,,,
+160.7164,1,Training,0,Full Circle,CardGame,,,,5
+160.7164,1,Training,0,Full Circle,Task: 4,,,
+160.7275,1,Training,0,Full Circle,CardGame,,,,7
+160.7275,1,Training,0,Full Circle,Task: 7,,,
+160.7387,1,Training,0,Full Circle,CardGame,,,,8
+160.7387,1,Training,0,Full Circle,Task: 3,,,
+160.7498,1,Training,0,Full Circle,CardGame,,,,8
+160.7498,1,Training,0,Full Circle,Task: 4,,,
+160.772,1,Training,0,Full Circle,CardGame,,,,1
+160.772,1,Training,0,Full Circle,Task: 3,,,
+160.7831,1,Training,0,Full Circle,CardGame,,,,3
+160.7831,1,Training,0,Full Circle,Task: 7,,,
+160.7942,1,Training,0,Full Circle,CardGame,,,,4
+160.7942,1,Training,0,Full Circle,Task: 4,,,
+160.8053,1,Training,0,Full Circle,CardGame,,,,8
+160.8053,1,Training,0,Full Circle,Task: 8,,,
+160.8164,1,Training,0,Full Circle,CardGame,,,,5
+160.8164,1,Training,0,Full Circle,Task: 8,,,
+160.8275,1,Training,0,Full Circle,CardGame,,,,7
+160.8275,1,Training,0,Full Circle,Task: 1,,,
+160.8387,1,Training,0,Full Circle,CardGame,,,,8
+160.8387,1,Training,0,Full Circle,Task: 8,,,
+160.8498,1,Training,0,Full Circle,CardGame,,,,8
+160.8498,1,Training,0,Full Circle,Task: 1,,,
+160.8609,1,Training,0,Full Circle,CardGame,,,,4
+160.8609,1,Training,0,Full Circle,Task: 8,,,
+160.872,1,Training,0,Full Circle,CardGame,,,,4
+160.872,1,Training,0,Full Circle,Task: 2,,,
+160.8831,1,Training,0,Full Circle,CardGame,,,,4
+160.8831,1,Training,0,Full Circle,Task: 3,,,
+160.8942,1,Training,0,Full Circle,CardGame,,,,2
+160.8942,1,Training,0,Full Circle,Task: 7,,,
+160.9053,1,Training,0,Full Circle,CardGame,,,,4
+160.9053,1,Training,0,Full Circle,Task: 3,,,
+160.9164,1,Training,0,Full Circle,CardGame,,,,8
+160.9164,1,Training,0,Full Circle,Task: 8,,,
+160.9275,1,Training,0,Full Circle,CardGame,,,,5
+160.9275,1,Training,0,Full Circle,Task: 6,,,
+160.9386,1,Training,0,Full Circle,CardGame,,,,7
+160.9386,1,Training,0,Full Circle,Task: 3,,,
+160.9498,1,Training,0,Full Circle,CardGame,,,,7
+160.9498,1,Training,0,Full Circle,Task: 2,,,
+160.9609,1,Training,0,Full Circle,CardGame,,,,3
+160.9609,1,Training,0,Full Circle,Task: 6,,,
+160.9609,1,Training,0,Full Circle,CardGame,,,,3
+160.9609,1,Training,0,Full Circle,Task: 2,,,
+160.972,1,Training,0,Full Circle,CardGame,,,,8
+160.972,1,Training,0,Full Circle,Task: 5,,,
+160.9831,1,Training,0,Full Circle,CardGame,,,,3
+160.9831,1,Training,0,Full Circle,Task: 2,,,
+160.9942,1,Training,0,Full Circle,CardGame,,,,5
+160.9942,1,Training,0,Full Circle,Task: 4,,,
+161.0164,1,Training,0,Full Circle,CardGame,,,,4
+161.0164,1,Training,0,Full Circle,Task: 6,,,
+161.0275,1,Training,0,Full Circle,CardGame,,,,5
+161.0275,1,Training,0,Full Circle,Task: 2,,,
+161.0387,1,Training,0,Full Circle,CardGame,,,,5
+161.0387,1,Training,0,Full Circle,Task: 6,,,
+161.0498,1,Training,0,Full Circle,CardGame,,,,5
+161.0498,1,Training,0,Full Circle,Task: 7,,,
+161.0609,1,Training,0,Full Circle,CardGame,,,,1
+161.0609,1,Training,0,Full Circle,Task: 3,,,
+161.0609,1,Training,0,Full Circle,CardGame,,,,1
+161.0609,1,Training,0,Full Circle,Task: 3,,,
+161.072,1,Training,0,Full Circle,CardGame,,,,8
+161.072,1,Training,0,Full Circle,Task: 6,,,
+161.0831,1,Training,0,Full Circle,CardGame,,,,9
+161.0831,1,Training,0,Full Circle,Task: 5,,,
+161.0942,1,Training,0,Full Circle,CardGame,,,,4
+161.0942,1,Training,0,Full Circle,Task: 4,,,
+161.1053,1,Training,0,Full Circle,CardGame,,,,9
+161.1053,1,Training,0,Full Circle,Task: 5,,,
+161.1164,1,Training,0,Full Circle,CardGame,,,,2
+161.1164,1,Training,0,Full Circle,Task: 3,,,
+161.1275,1,Training,0,Full Circle,CardGame,,,,4
+161.1275,1,Training,0,Full Circle,Task: 5,,,
+161.1386,1,Training,0,Full Circle,CardGame,,,,8
+161.1386,1,Training,0,Full Circle,Task: 7,,,
+161.1498,1,Training,0,Full Circle,CardGame,,,,5
+161.1498,1,Training,0,Full Circle,Task: 6,,,
+161.1609,1,Training,0,Full Circle,CardGame,,,,7
+161.1609,1,Training,0,Full Circle,Task: 7,,,
+161.172,1,Training,0,Full Circle,CardGame,,,,7
+161.172,1,Training,0,Full Circle,Task: 5,,,
+161.1831,1,Training,0,Full Circle,CardGame,,,,5
+161.1831,1,Training,0,Full Circle,Task: 6,,,
+161.1942,1,Training,0,Full Circle,CardGame,,,,3
+161.1942,1,Training,0,Full Circle,Task: 7,,,
+161.2053,1,Training,0,Full Circle,CardGame,,,,5
+161.2053,1,Training,0,Full Circle,Task: 4,,,
+161.2164,1,Training,0,Full Circle,CardGame,,,,6
+161.2164,1,Training,0,Full Circle,Task: 7,,,
+161.2275,1,Training,0,Full Circle,CardGame,,,,9
+161.2275,1,Training,0,Full Circle,Task: 4,,,
+161.2386,1,Training,0,Full Circle,CardGame,,,,3
+161.2386,1,Training,0,Full Circle,Task: 7,,,
+161.2498,1,Training,0,Full Circle,CardGame,,,,9
+161.2498,1,Training,0,Full Circle,Task: 8,,,
+161.2609,1,Training,0,Full Circle,CardGame,,,,6
+161.2609,1,Training,0,Full Circle,Task: 4,,,
+161.272,1,Training,0,Full Circle,CardGame,,,,2
+161.272,1,Training,0,Full Circle,Task: 5,,,
+161.2831,1,Training,0,Full Circle,CardGame,,,,5
+161.2831,1,Training,0,Full Circle,Task: 2,,,
+161.2942,1,Training,0,Full Circle,CardGame,,,,5
+161.2942,1,Training,0,Full Circle,Task: 3,,,
+161.3053,1,Training,0,Full Circle,CardGame,,,,2
+161.3053,1,Training,0,Full Circle,Task: 7,,,
+161.3164,1,Training,0,Full Circle,CardGame,,,,3
+161.3164,1,Training,0,Full Circle,Task: 3,,,
+161.3275,1,Training,0,Full Circle,CardGame,,,,4
+161.3275,1,Training,0,Full Circle,Task: 4,,,
+161.3386,1,Training,0,Full Circle,CardGame,,,,2
+161.3386,1,Training,0,Full Circle,Task: 3,,,
+161.3497,1,Training,0,Full Circle,CardGame,,,,1
+161.3497,1,Training,0,Full Circle,Task: 4,,,
+161.3609,1,Training,0,Full Circle,CardGame,,,,5
+161.3609,1,Training,0,Full Circle,Task: 2,,,
+161.372,1,Training,0,Full Circle,CardGame,,,,2
+161.372,1,Training,0,Full Circle,Task: 6,,,
+161.3831,1,Training,0,Full Circle,CardGame,,,,6
+161.3831,1,Training,0,Full Circle,Task: 6,,,
+161.3942,1,Training,0,Full Circle,CardGame,,,,4
+161.3942,1,Training,0,Full Circle,Task: 8,,,
+161.4053,1,Training,0,Full Circle,CardGame,,,,1
+161.4053,1,Training,0,Full Circle,Task: 3,,,
+161.4164,1,Training,0,Full Circle,CardGame,,,,5
+161.4164,1,Training,0,Full Circle,Task: 7,,,
+161.4386,1,Training,0,Full Circle,CardGame,,,,9
+161.4386,1,Training,0,Full Circle,Task: 7,,,
+161.4386,1,Training,0,Full Circle,CardGame,,,,9
+161.4386,1,Training,0,Full Circle,Task: 3,,,
+161.4498,1,Training,0,Full Circle,CardGame,,,,7
+161.4498,1,Training,0,Full Circle,Task: 1,,,
+161.4609,1,Training,0,Full Circle,CardGame,,,,5
+161.4609,1,Training,0,Full Circle,Task: 4,,,
+161.472,1,Training,0,Full Circle,CardGame,,,,3
+161.472,1,Training,0,Full Circle,Task: 6,,,
+161.4831,1,Training,0,Full Circle,CardGame,,,,6
+161.4831,1,Training,0,Full Circle,Task: 4,,,
+161.4942,1,Training,0,Full Circle,CardGame,,,,9
+161.4942,1,Training,0,Full Circle,Task: 4,,,
+161.5053,1,Training,0,Full Circle,CardGame,,,,6
+161.5053,1,Training,0,Full Circle,Task: 8,,,
+161.5164,1,Training,0,Full Circle,CardGame,,,,4
+161.5164,1,Training,0,Full Circle,Task: 5,,,
+161.5275,1,Training,0,Full Circle,CardGame,,,,5
+161.5275,1,Training,0,Full Circle,Task: 6,,,
+161.5386,1,Training,0,Full Circle,CardGame,,,,2
+161.5386,1,Training,0,Full Circle,Task: 7,,,
+161.5497,1,Training,0,Full Circle,CardGame,,,,9
+161.5497,1,Training,0,Full Circle,Task: 8,,,
+161.5609,1,Training,0,Full Circle,CardGame,,,,3
+161.5609,1,Training,0,Full Circle,Task: 4,,,
+161.572,1,Training,0,Full Circle,CardGame,,,,3
+161.572,1,Training,0,Full Circle,Task: 6,,,
+161.5831,1,Training,0,Full Circle,CardGame,,,,8
+161.5831,1,Training,0,Full Circle,Task: 5,,,
+161.5942,1,Training,0,Full Circle,CardGame,,,,5
+161.5942,1,Training,0,Full Circle,Task: 4,,,
+161.6053,1,Training,0,Full Circle,CardGame,,,,7
+161.6053,1,Training,0,Full Circle,Task: 3,,,
+161.6164,1,Training,0,Full Circle,CardGame,,,,4
+161.6164,1,Training,0,Full Circle,Task: 1,,,
+161.6275,1,Training,0,Full Circle,CardGame,,,,8
+161.6275,1,Training,0,Full Circle,Task: 1,,,
+161.6386,1,Training,0,Full Circle,CardGame,,,,1
+161.6386,1,Training,0,Full Circle,Task: 5,,,
+161.6497,1,Training,0,Full Circle,CardGame,,,,4
+161.6497,1,Training,0,Full Circle,Task: 3,,,
+161.6609,1,Training,0,Full Circle,CardGame,,,,5
+161.6609,1,Training,0,Full Circle,Task: 1,,,
+161.672,1,Training,0,Full Circle,CardGame,,,,1
+161.672,1,Training,0,Full Circle,Task: 4,,,
+161.6831,1,Training,0,Full Circle,CardGame,,,,9
+161.6831,1,Training,0,Full Circle,Task: 2,,,
+161.6942,1,Training,0,Full Circle,CardGame,,,,7
+161.6942,1,Training,0,Full Circle,Task: 1,,,
+161.7053,1,Training,0,Full Circle,CardGame,,,,3
+161.7053,1,Training,0,Full Circle,Task: 2,,,
+161.7164,1,Training,0,Full Circle,CardGame,,,,8
+161.7164,1,Training,0,Full Circle,Task: 3,,,
+161.7275,1,Training,0,Full Circle,CardGame,,,,4
+161.7275,1,Training,0,Full Circle,Task: 7,,,
+161.7386,1,Training,0,Full Circle,CardGame,,,,3
+161.7386,1,Training,0,Full Circle,Task: 4,,,
+161.7497,1,Training,0,Full Circle,CardGame,,,,1
+161.7497,1,Training,0,Full Circle,Task: 6,,,
+161.7608,1,Training,0,Full Circle,CardGame,,,,7
+161.7608,1,Training,0,Full Circle,Task: 8,,,
+161.772,1,Training,0,Full Circle,CardGame,,,,6
+161.772,1,Training,0,Full Circle,Task: 8,,,
+161.7831,1,Training,0,Full Circle,CardGame,,,,9
+161.7831,1,Training,0,Full Circle,Task: 4,,,
+161.7942,1,Training,0,Full Circle,CardGame,,,,6
+161.7942,1,Training,0,Full Circle,Task: 6,,,
+161.8053,1,Training,0,Full Circle,CardGame,,,,6
+161.8053,1,Training,0,Full Circle,Task: 3,,,
+165.8052,1,Training,0,Full Circle,Task: 2,,,
+169.8162,1,Training,0,Full Circle,Task: 7,,,
+173.8161,1,Training,0,Full Circle,Task: 8,,,
+177.8272,1,Training,0,Full Circle,Task: 1,,,
+181.8271,1,Training,0,Full Circle,Task: 3,,,
+185.827,1,Training,0,Full Circle,Task: 1,,,
+189.8269,1,Training,0,Full Circle,Task: 7,,,
+193.8268,1,Training,0,Full Circle,Task: 3,,,
+197.8378,1,Training,0,Full Circle,Task: 1,,,
+201.8489,1,Training,0,Full Circle,Task: 6,,,
+205.8488,1,Training,0,Full Circle,Task: 8,,,
+209.8598,1,Training,0,Full Circle,Task: 1,,,
+213.8708,1,Training,0,Full Circle,Task: 6,,,
+217.8707,1,Training,0,Full Circle,Task: 6,,,
+221.8817,1,Training,0,Full Circle,Task: 1,,,
+225.8817,1,Training,0,Full Circle,Task: 3,,,
+229.8927,1,Training,0,Full Circle,Task: 4,,,
+233.9037,1,Training,0,Full Circle,Task: 7,,,
+237.9147,1,Training,0,Full Circle,Task: 5,,,
+241.9146,1,Training,0,Full Circle,Task: 4,,,
+245.9146,1,Training,0,Full Circle,Task: 4,,,
+249.9256,1,Training,0,Full Circle,Task: 3,,,
+253.9255,1,Training,0,Full Circle,Task: 5,,,
+257.9254,1,Training,0,Full Circle,Task: 3,,,
+261.9364,1,Training,0,Full Circle,Task: 7,,,
+265.9363,1,Training,0,Full Circle,Task: 5,,,
+269.9474,1,Training,0,Full Circle,Task: 5,,,
+273.9584,1,Training,0,Full Circle,Task: 6,,,
+277.9583,1,Training,0,Full Circle,Task: 4,,,
+281.9693,1,Training,0,Full Circle,Task: 1,,,
+285.9692,1,Training,0,Full Circle,Task: 2,,,
+289.9802,1,Training,0,Full Circle,Task: 8,,,
+293.9801,1,Training,0,Full Circle,Task: 6,,,
+297.9912,1,Training,0,Full Circle,Task: 1,,,
+301.9911,1,Training,0,Full Circle,Task: 4,,,
+306.0021,1,Training,0,Full Circle,Task: 3,,,
+310.002,1,Training,0,Full Circle,Task: 8,,,

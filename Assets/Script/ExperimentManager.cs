@@ -210,21 +210,25 @@ public class ExperimentManager : MonoBehaviour
 
         string condition = "";
 
-        if (BlindFold) {
+        if (BlindFold)
+        {
             semiCircleSetupOffset = 0;
             condition = "Blindfold";
         }
-        else if (Landmark) {
+        else if (Landmark)
+        {
             semiCircleSetupOffset = 0;
             condition = "Landmark";
         }
-        else if (SemiCircle) {
+        else if (SemiCircle)
+        {
             semiCircleSetupOffset = -1;
             condition = "SemiCircle";
         }
-
-        
-            
+        else {
+            semiCircleSetupOffset = 0;
+            condition = "Regular";
+        }
 
         // setup writer stream
         string writerFilePath = "Assets/ExperimentData/ExperimentLog/" + condition + "/Participant " + StartSceneScript.ParticipantID + "/Participant_" + StartSceneScript.ParticipantID + "_RawData.csv";
